@@ -14,3 +14,9 @@ la pagina muestra un menu de opciones donde deberia elegir una de dos opciones. 
 ![Screenshot 2021-06-24 142221](https://user-images.githubusercontent.com/82213246/123323297-eb541200-d4fa-11eb-965a-a2eb13c3da92.png)
 ![Screenshot 2021-06-24 141716](https://user-images.githubusercontent.com/82213246/123323305-eee79900-d4fa-11eb-9350-5150a03c37f5.png)
 
+
+# Pagina de ayuda para las personas que tuviecen complicaciones a la hora de registrarse o prospectarse 
+![Screenshot 2021-06-24 142249](https://user-images.githubusercontent.com/82213246/123323825-ad0b2280-d4fb-11eb-9dc0-a52d81475214.png)
+![Screenshot 2021-06-24 142315](https://user-images.githubusercontent.com/82213246/123323837-b1374000-d4fb-11eb-93a9-e81dd77764c4.png)
+![Screenshot 2021-06-24 142356](https://user-images.githubusercontent.com/82213246/123323852-b4cac700-d4fb-11eb-8ab2-a3fe1b02c12a.png)
+
