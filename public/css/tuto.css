@@ -1,0 +1,1427 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+ }
+ 
+ body {
+     background-color: rgb(254, 254, 255);
+ }
+ 
+ body .barra {
+     margin: 40px;
+ }
+ 
+ .barra {
+     height: 10px;
+ }
+ 
+ nav img {
+     width: auto;
+     height: 50px;
+     margin: 5px 10px;
+ }
+ 
+ .barra .navbar nav .navbar-expand-lg {
+     width: 100%;
+     background-color: #006ce7;
+ }
+ 
+ nav h2 {
+     font-size: 25px;
+     padding: 10px;
+     margin: 0px 25px;
+ }
+ 
+ nav .navbar-collapse {
+     max-width: 400px;
+     text-align: center;
+     margin: 5px;
+     padding: 1px;
+ }
+ 
+ nav .navbar-collapse .navbar-nav {
+     background-color: #f8e3ef;
+     border-radius: 20px;
+ }
+ 
+ nav .navbar-collapse .navbar-nav a {
+     color: #ffffff;
+ }
+ 
+ nav .navbar-collapse li .section {
+     transition: all 0.5s ease-in-out;
+     -webkit-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+ }
+ 
+ nav .navbar-collapse a:hover {
+     color: #000000;
+     background-color: #ffa4c9;
+     border-radius: 20px;
+ }
+ 
+ .ir {
+     background-color: rgb(0, 136, 190);
+     padding: 10px;
+     width: 150px;
+     border-radius: 20px;
+     transition: all 0.5s ease-in-out;
+     -webkit-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+ }
+ 
+ .ir:hover {
+     background-color: #38afff;
+ }
+ 
+ .ir h5 {
+     margin: 0px;
+     color: #ffffff;
+     font-size: 20px;
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+ 
+ .header {
+     background: no-repeat center/97.5% url("../img/D_TfdhiXYAY46Fc.jpg");
+     width: 100%;
+     position: relative;
+     height: 550px;
+ }
+ 
+ .header .info {
+     color: #ffffff;
+     padding: 10px;
+     margin: auto;
+     background-color: rgba(255, 27, 65, 0.507);
+     max-width: 95%;
+     border-radius: 0 20px 20px 0;
+     height: auto;
+     display: inline-block;
+ }
+ 
+ .header .info h1 {
+     display: inline-block;
+     margin: 0px 10px;
+     padding: 10px;
+     border-radius: 25px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: rgb(255, 128, 149);
+     font-size: 35px;
+ }
+ 
+ .info p {
+     font-size: 20px;
+     padding: 5px;
+     margin: 0 10px 10px 10px;
+     font-family: 'Times New Roman', Times, serif;
+     justify-content: left;
+ }
+ 
+ .info a {
+     color: #ffffff;
+     font-size: 20px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     text-decoration: none;
+     background-color: rgb(0, 136, 190);
+     border-radius: 25px;
+     padding: 5px 10px;
+     transition: all 0.3s ease;
+     -webkit-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+ }
+ 
+ .info a:hover {
+     background-color: #0052af
+ }
+ /*primera seccion  informacion de formulario */
+ 
+ .wow .seccion-formulario {
+     padding: 20px 20px;
+     width: 100%;
+     margin-top: 75px;
+     height: 600px;
+     margin-bottom: 75px;
+ }
+ 
+ .wow .seccion-formulario h2 {
+     font-size: 35px;
+     background-color: #008cffed;
+     color: #ffffff;
+     border-radius: 10px;
+     padding: 5px;
+     margin: 15px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align: center;
+ }
+ 
+ .wow .seccion-formulario p {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 18.5px;
+     padding: 15px;
+     margin: 15px;
+     justify-content: left;
+ }
+ 
+ .wow .lista-img {
+     display: grid;
+     grid-template-columns: repeat(2 1fr);
+     height: 280px;
+     grid-template-areas: "info img";
+ }
+ 
+ .wow .lista-img .lista {
+     grid-area: info;
+ }
+ 
+ .wow .lista-img .img {
+     grid-area: img;
+     text-align: center;
+ }
+ 
+ .wow .lista-img .lista p {
+     font-size: 17px;
+     margin: 0px;
+     display: inline-block;
+     justify-content: left;
+ }
+ 
+ .wow .lista-img .lista li {
+     font-size: 17px;
+     margin-left: 30px;
+ }
+ 
+ .wow .lista-img .img img {
+     width: 420px;
+     height: auto;
+     transition: all 0.3 ease-in-out;
+     -webkit-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+ }
+ 
+ .wow .lista-img .img img:hover {
+     width: 800px;
+     display: block;
+     height: auto;
+ }
+ 
+ .wow .parafo1 {
+     background-color: #df206c;
+     border-radius: 30px;
+     color: aliceblue;
+ }
+ /*section 2 informacion que raiiioss :v*/
+ 
+ .dato {
+     margin-top: 200px;
+     background-color: rgb(0, 138, 180);
+     margin-bottom: 100px;
+     position: relative;
+     height: 610px;
+     padding: 40px;
+     width: 100%;
+ }
+ 
+ .datos {
+     max-height: 650px;
+     width: 100%;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-template-areas: "immg req";
+     padding: 20px
+ }
+ 
+ .datos p {
+     font-size: 20px;
+     color: rgb(255, 255, 255);
+     padding: 5px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ .datos li {
+     font-family: 'Oswald', sans-serif;
+     font-size: 30px;
+     margin-top: 20px;
+     color: #ffa4c9;
+ }
+ 
+ .datos span {
+     margin: 10px;
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 20px;
+     color: #f8e3ef;
+ }
+ 
+ .dato h2 {
+     text-align: center;
+     color: #ffffff;
+     font-size: 35px;
+ }
+ 
+ .datos .datoss {
+     grid-area: immg;
+ }
+ 
+ .datos .datoss img {
+     width: 500px;
+     text-align: center;
+     margin-top: 25px;
+     transition: all 0.3 ease-in-out;
+     -webkit-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+ }
+ 
+ .datos .datoss img:hover {
+     width: 800px;
+     display: block;
+     height: auto;
+ }
+ 
+ .datos h3 {
+     padding: 10px;
+     font-size: 30px;
+     margin-top: 30px;
+     color: #ffffff;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ .datos .requisitos {
+     grid-area: req;
+ }
+ /*secction 3*/
+ 
+ .section3 {
+     max-height: 1600px;
+ }
+ 
+ .section3 div {
+     max-height: 1500px;
+ }
+ 
+ .section3 p {
+     color: #047da1af;
+     font-size: 25px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ .section3 .img {
+     justify-content: center;
+ }
+ 
+ .center {
+     display: block;
+     margin: auto;
+ }
+ 
+ .section3 img {
+     width: 250px;
+     transition: all 0.3 ease-in-out;
+     -webkit-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+ }
+ 
+ .section3 img:hover {
+     width: 800px;
+ }
+ 
+ .section3 div h3 {
+     color: #ffffff;
+     font-size: 25px;
+     text-align: center;
+     padding: 10px;
+     margin: 10px 0px;
+     margin-left: 150px;
+     display: inline-block;
+     width: 800px;
+     border-radius: 30px;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     background-color: #df206c;
+ }
+ /*---------seccion vamo a por ello -------*/
+ 
+ .section4 .vamo {
+     height: 600px;
+     display: grid;
+     grid-template-columns: 1fr 400px;
+     grid-template-areas: "target botones";
+ }
+ /*grid target*/
+ 
+ .section4 .target {
+     padding: 15px;
+     background-color: #ffffff;
+     grid-area: target;
+ }
+ 
+ .section4 .target p {
+     padding: 25px;
+     justify-content: center;
+     font-size: 18px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ .section4 .target h2 {
+     color: #38afff;
+     text-align: center;
+     font-size: 30px;
+     padding: 5px;
+     border: #017cce solid 4px;
+     border-radius: 40px;
+ }
+ 
+ .section4 .target .indicaciones {
+     padding: 10px;
+ }
+ 
+ .section4 .target .indicaciones h3 {
+     font-size: 15px;
+     padding: 2px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     justify-content: center;
+ }
+ 
+ .section4 .target img {
+     width: 250px;
+ }
+ /*grid botones*/
+ 
+ .section4 .vamo .botones {
+     background-color: #006ce7;
+     grid-area: botones;
+     padding: 30px;
+     height: 500px;
+     border-radius: 35px;
+ }
+ 
+ .section4 .vamo .botones a {
+     display: inline-block;
+     color: #ffffff;
+     background-color: #ffa4c9;
+     cursor: pointer;
+     font-size: 20px;
+     text-align: center;
+     width: 250px;
+     border-radius: 25px;
+     padding: 10px;
+     text-decoration: none;
+     margin: 10px 30px;
+     transition: all 0.3 ease-in-out;
+     -webkit-transition: all 0.3s ease-in-out;
+     -o-transition: all 0.3s ease-in-out;
+ }
+ 
+ .section4 .vamo .botones a:hover {
+     background-color: #fc74aa
+ }
+ 
+ .section4 .vamo .botones .indicaciones {
+     padding: 15px;
+ }
+ 
+ .section4 .vamo .botones p {
+     color: #ffffff;
+     padding: 10px;
+     margin: 5px;
+     font-size: 18px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ /*mwdia query a 1200 px*/
+ 
+ @media screen and (max-width: 1200px) {
+     .barra nav h2 {
+         font-size: 22px;
+         margin: auto;
+     }
+ }
+ 
+ @media screen and (max-width: 1000px) {
+     .header {
+         background: no-repeat center/97.5% url("../img/D_TfdhiXYAY46Fc.jpg");
+         width: 100%;
+         height: 380px;
+     }
+     .header .info {
+         padding: 10px;
+         margin: auto;
+         max-width: 100%;
+         border-radius: 0 20px 20px 0;
+         height: auto;
+         display: inline-block;
+     }
+     .header .info h1 {
+         margin: 0px 5px;
+         padding: 10px;
+         border-radius: 25px;
+         font-size: 30px;
+     }
+     .info p {
+         font-size: 18px;
+         padding: 5px;
+         margin: 0 5px 5px 5px;
+         justify-content: left;
+     }
+     /*seccion informacion de formulario */
+     .wow .seccion-formulario {
+         padding: 20px 20px;
+         width: 100%;
+         margin-top: 75px;
+         height: 700px;
+         margin-bottom: 75px;
+     }
+     .wow .seccion-formulario h2 {
+         font-size: 30px;
+         padding: 5px;
+         margin: 15px;
+     }
+     .wow .seccion-formulario p {
+         font-size: 18.5px;
+     }
+     .wow .lista-img {
+         display: grid;
+         grid-template-columns: repeat(2 1fr);
+         height: 280px;
+         grid-template-areas: "info img";
+     }
+     .wow .lista-img .lista {
+         grid-area: info;
+     }
+     .wow .lista-img .img {
+         grid-area: img;
+         text-align: center;
+     }
+     .wow .lista-img .lista p {
+         font-size: 17px;
+         margin: 0px;
+     }
+     .wow .lista-img .lista li {
+         font-size: 17px;
+         margin-left: 30px;
+     }
+     .wow .lista-img .img img {
+         width: 350px;
+         height: auto;
+     }
+     .wow .lista-img .img img:hover {
+         width: 600px;
+         display: block;
+         height: auto;
+     }
+     .wow .parafo1 {
+         font-size: 25px;
+     }
+     .wow .parafo1 p {
+         font-size: 16px;
+     }
+     /*section 2 informacion que raiiioss :v*/
+     .dato {
+         margin-top: 200px;
+         margin-bottom: 100px;
+         height: 640px;
+         padding: 40px;
+         width: 100%;
+     }
+     .datos {
+         height: 650px;
+         width: 100%;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-areas: "immg req";
+         padding: 20px
+     }
+     .datos p {
+         font-size: 16px;
+         color: rgb(255, 255, 255);
+         padding: 5px;
+     }
+     .datos li {
+         font-size: 23px;
+         margin-top: 20px;
+     }
+     .datos span {
+         margin: 10px;
+         font-size: 18px;
+     }
+     .dato h2 {
+         color: #ffffff;
+         font-size: 30px;
+     }
+     .datos .datoss {
+         grid-area: immg;
+     }
+     .datos .datoss img {
+         width: 300px;
+         text-align: center;
+         margin-top: 25px;
+     }
+     .datos .datoss img:hover {
+         width: 600px;
+         display: block;
+         height: auto;
+     }
+     .datos h3 {
+         padding: 10px;
+         font-size: 25px;
+         margin-top: 30px;
+     }
+     .datos .requisitos {
+         grid-area: req;
+     }
+     /*secction 3*/
+     .section3 {
+         max-height: 1600px;
+     }
+     .section3 div {
+         max-height: 1500px;
+     }
+     .section3 p {
+         font-size: 25px;
+     }
+     .section3 .img {
+         justify-content: center;
+     }
+     .center {
+         display: block;
+         margin: auto;
+     }
+     .section3 img {
+         width: 200px;
+     }
+     .section3 img:hover {
+         width: 600px;
+     }
+     .section3 div h3 {
+         font-size: 25px;
+         padding: 10px;
+         margin: 10px 0px;
+         margin-left: auto;
+         width: 600px;
+         border-radius: 30px;
+     }
+     /*---------seccion vamo a por ello -------*/
+     .section4 .vamo {
+         height: 550px;
+         display: grid;
+         grid-template-columns: 1fr 350px;
+         grid-template-areas: "target botones";
+     }
+     /*grid target*/
+     .section4 .target {
+         padding: 15px;
+         background-color: #ffffff;
+         grid-area: target;
+     }
+     .section4 .target p {
+         padding: 25px;
+         justify-content: center;
+         font-size: 16px;
+     }
+     .section4 .target h2 {
+         font-size: 25px;
+         padding: 5px;
+         border: #017cce solid 4px;
+         border-radius: 40px;
+     }
+     .section4 .target .indicaciones {
+         padding: 8px;
+     }
+     .section4 .target .indicaciones h3 {
+         font-size: 14px;
+         padding: 2px;
+     }
+     .section4 .target img {
+         width: 250px;
+     }
+     /*grid botones*/
+     .section4 .vamo .botones {
+         grid-area: botones;
+         padding: 30px;
+         height: 550px;
+         border-radius: 35px;
+     }
+     .section4 .vamo .botones a {
+         font-size: 20px;
+         width: 250px;
+         border-radius: 25px;
+         padding: 10px;
+         margin: 10px auto;
+     }
+     .section4 .vamo .botones .indicaciones {
+         padding: 15px;
+     }
+     .section4 .vamo .botones p {
+         padding: 10px;
+         margin: 5px;
+         font-size: 16px;
+     }
+ }
+ 
+ @media screen and (max-width: 766px) {
+     .barra nav h2 {
+         font-size: 22px;
+         margin: 0px 60px;
+     }
+     .header {
+         background: no-repeat center/97.5% url("../img/D_TfdhiXYAY46Fc.jpg");
+         width: 100%;
+         height: 250px;
+     }
+     .header .info {
+         padding: 10px;
+         margin: auto;
+         max-width: 100%;
+         border-radius: 0 20px 20px 0;
+         height: auto;
+         display: inline-block;
+     }
+     .header .info h1 {
+         margin: 0px 5px;
+         padding: 8px;
+         border-radius: 25px;
+         font-size: 25px;
+     }
+     .info p {
+         font-size: 14px;
+         padding: 5px;
+         margin: 0 5px 5px 5px;
+     }
+     /*seccion informacion de formulario */
+     .wow .seccion-formulario {
+         padding: 10px;
+         width: 100%;
+         margin-top: 75px;
+         height: 700px;
+         margin-bottom: 75px;
+     }
+     .wow .seccion-formulario h2 {
+         font-size: 25px;
+         padding: 5px;
+         margin: 15px;
+     }
+     .wow .seccion-formulario p {
+         font-size: 16px;
+     }
+     .wow .lista-img {
+         display: grid;
+         grid-template-columns: repeat(2 1fr);
+         height: 280px;
+         grid-template-areas: "info img";
+     }
+     .wow .lista-img .lista {
+         grid-area: info;
+     }
+     .wow .lista-img .img {
+         grid-area: img;
+         text-align: center;
+     }
+     .wow .lista-img .lista p {
+         font-size: 17px;
+         margin: 0px;
+     }
+     .wow .lista-img .lista li {
+         font-size: 15px;
+         margin-left: 30px;
+     }
+     .wow .lista-img .img img {
+         width: 200px;
+         height: auto;
+     }
+     .wow .lista-img .img img:hover {
+         width: 400px;
+         display: block;
+         height: auto;
+     }
+     .wow .parafo1 p {
+         font-size: 16px;
+     }
+     /*section 2 informacion que raiiioss :v*/
+     .dato {
+         margin-top: 200px;
+         margin-bottom: 100px;
+         height: 650px;
+         padding: 40px;
+         width: 100%;
+     }
+     .datos {
+         height: 580px;
+         width: 100%;
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-areas: "immg req";
+         padding: 20px
+     }
+     .datos .requisitos p {
+         font-size: 14px;
+         padding: 5px;
+     }
+     .datos li {
+         font-size: 20px;
+         margin-top: 10px;
+     }
+     .datos span {
+         margin: 5px;
+         font-size: 16px;
+     }
+     .dato h2 {
+         color: #ffffff;
+         font-size: 30px;
+     }
+     .datos .datoss {
+         grid-area: immg;
+     }
+     .datos .datoss img {
+         width: 250px;
+         text-align: center;
+         margin-top: 200px;
+     }
+     .datos .datoss img:hover {
+         width: 400px;
+         display: block;
+         height: auto;
+     }
+     .datos h3 {
+         padding: 10px;
+         font-size: 14px;
+         margin-top: 30px;
+     }
+     .datos .requisitos {
+         grid-area: req;
+     }
+     /*secction 3*/
+     .section3 {
+         max-height: 1600px;
+     }
+     .section3 div {
+         max-height: 1500px;
+     }
+     .section3 p {
+         font-size: 25px;
+     }
+     .section3 .img {
+         justify-content: center;
+     }
+     .center {
+         display: block;
+         margin: auto;
+     }
+     .section3 img {
+         width: 200px;
+     }
+     .section3 img:hover {
+         width: 400px;
+     }
+     .section3 div h3 {
+         font-size: 19px;
+         padding: 10px;
+         margin: 10px 0px;
+         margin-left: auto;
+         width: 500px;
+         border-radius: 30px;
+     }
+     /*---------seccion vamo a por ello -------*/
+     .section4 .vamo {
+         height: 550px;
+         display: grid;
+         grid-template-columns: 1fr 350px;
+         grid-template-areas: "target botones";
+     }
+     /*grid target*/
+     .section4 .target {
+         padding: 15px;
+         background-color: #ffffff;
+         grid-area: target;
+     }
+     .section4 .target p {
+         padding: 25px;
+         justify-content: center;
+         font-size: 14px;
+     }
+     .section4 .target h2 {
+         font-size: 20px;
+         padding: 5px;
+         border: #017cce solid 4px;
+         border-radius: 40px;
+     }
+     .section4 .target .indicaciones {
+         padding: 8px;
+     }
+     .section4 .target .indicaciones h3 {
+         font-size: 14px;
+         padding: 2px;
+     }
+     .section4 .target img {
+         width: 220px;
+     }
+     /*grid botones*/
+     .section4 .vamo .botones {
+         grid-area: botones;
+         padding: 30px;
+         height: 550px;
+         border-radius: 35px;
+     }
+     .section4 .vamo .botones a {
+         font-size: 18px;
+         width: 250px;
+         border-radius: 25px;
+         padding: 10px;
+         margin: 10px auto;
+     }
+     .section4 .vamo .botones .indicaciones {
+         padding: 15px;
+     }
+     .section4 .vamo .botones p {
+         padding: 10px;
+         margin: 5px;
+         font-size: 14px;
+     }
+ }
+ 
+ @media screen and (max-width: 700px) {
+     .barra nav h2 {
+         display: none;
+         font-size: 18px;
+         margin: 0px 10px;
+     }
+     .barra nav img {
+         margin: 0px 150px;
+     }
+ }
+ 
+ @media screen and (max-width: 538px) {
+     .barra nav h2 {
+         display: none;
+         font-size: 18px;
+         margin: 0px 10px;
+     }
+     .barra nav img {
+         margin: 0px 100px;
+     }
+ }
+ 
+ @media screen and (max-width: 704px) {
+     .barra nav h2 {
+         font-size: 22px;
+         margin: 0px 60px;
+     }
+     .barra img {
+         margin: auto;
+     }
+     .header {
+         background: no-repeat center/97.5% url("../img/D_TfdhiXYAY46Fc.jpg");
+         width: 100%;
+         height: 250px;
+     }
+     .header .info {
+         padding: 8px;
+         margin: auto;
+         max-width: 100%;
+         border-radius: 0 20px 20px 0;
+         height: auto;
+         display: inline-block;
+     }
+     .header .info h1 {
+         margin: 0px 5px;
+         padding: 8px;
+         border-radius: 25px;
+         font-size: 20px;
+     }
+     .info p {
+         font-size: 13px;
+         padding: 5px;
+         margin: 0 5px 5px 5px;
+     }
+     /*seccion informacion de formulario */
+     .wow .seccion-formulario {
+         padding: 10px;
+         width: 100%;
+         margin-top: 75px;
+         height: 650px;
+         margin-bottom: 75px;
+     }
+     .wow .seccion-formulario h2 {
+         font-size: 20px;
+         padding: 5px;
+         margin: 5px;
+     }
+     .wow .seccion-formulario p {
+         font-size: 16px;
+     }
+     .wow .lista-img {
+         display: grid;
+         grid-template-columns: repeat(2 1fr);
+         height: 280px;
+         grid-template-areas: "info img";
+     }
+     .wow .lista-img .lista {
+         grid-area: info;
+     }
+     .wow .lista-img .img {
+         grid-area: img;
+         text-align: center;
+     }
+     .wow .lista-img .lista p {
+         font-size: 16px;
+         margin: 0px;
+     }
+     .wow .lista-img .lista li {
+         font-size: 16px;
+         margin-left: 30px;
+     }
+     .wow .lista-img .img img {
+         width: 200px;
+         height: auto;
+     }
+     .wow .lista-img .img img:hover {
+         width: 400px;
+         display: block;
+         height: auto;
+     }
+     .wow .parafo1 p {
+         font-size: 16px;
+     }
+     /*section 2 informacion que raiiioss :v*/
+     .dato {
+         margin-top: 200px;
+         margin-bottom: 100px;
+         height: 750px;
+         padding: 40px;
+         width: 100%;
+     }
+     .datos {
+         height: 650px;
+         width: 100%;
+         display: grid;
+         grid-template-columns: none;
+         grid-template-rows: 250px 1fr;
+         grid-template-areas: "immg"" req";
+         padding: 20px
+     }
+     .datos .requisitos p {
+         font-size: 16px;
+         padding: 5px;
+     }
+     .datos li {
+         font-size: 20px;
+         margin-top: 10px;
+     }
+     .datos span {
+         margin: 5px;
+         font-size: 16px;
+     }
+     .dato h2 {
+         color: #ffffff;
+         font-size: 30px;
+     }
+     .datos .datoss {
+         grid-area: immg;
+     }
+     .datos .datoss img {
+         width: 200px;
+         text-align: center;
+         margin-top: 5px;
+     }
+     .datos .datoss img:hover {
+         width: 400px;
+         display: block;
+         height: auto;
+     }
+     .datos h3 {
+         padding: 10px;
+         font-size: 14px;
+         margin-top: 30px;
+     }
+     .datos .requisitos {
+         grid-area: req;
+     }
+     /*secction 3*/
+     .section3 {
+         max-height: 1600px;
+     }
+     .section3 div {
+         max-height: 1500px;
+     }
+     .section3 p {
+         font-size: 25px;
+     }
+     .section3 .img {
+         justify-content: center;
+     }
+     .center {
+         display: block;
+         margin: auto;
+     }
+     .section3 img {
+         width: 200px;
+     }
+     .section3 img:hover {
+         width: 400px;
+     }
+     .section3 div h3 {
+         font-size: 19px;
+         padding: 10px;
+         margin: 10px 0px;
+         margin-left: auto;
+         width: 500px;
+         border-radius: 30px;
+     }
+     /*---------seccion vamo a por ello -------*/
+     .section4 .vamo {
+         height: 550px;
+         display: grid;
+         grid-template-columns: none;
+         grid-template-rows: repeat(2 1fr);
+         grid-template-areas: "target"" botones";
+     }
+     /*grid target*/
+     .section4 .target {
+         padding: 15px;
+         background-color: #ffffff;
+         grid-area: target;
+     }
+     .section4 .target p {
+         padding: 25px;
+         justify-content: center;
+         font-size: 14px;
+     }
+     .section4 .target h2 {
+         font-size: 20px;
+         padding: 5px;
+         border: #017cce solid 4px;
+         border-radius: 40px;
+     }
+     .section4 .target .indicaciones {
+         padding: 8px;
+     }
+     .section4 .target .indicaciones h3 {
+         font-size: 14px;
+         padding: 2px;
+     }
+     .section4 .target img {
+         width: 220px;
+     }
+     /*grid botones*/
+     .section4 .vamo .botones {
+         grid-area: botones;
+         padding: 30px;
+         height: 250px;
+         border-radius: 35px;
+     }
+     .section4 .vamo .botones a {
+         font-size: 18px;
+         width: 250px;
+         border-radius: 25px;
+         padding: 10px;
+         margin: 10px auto;
+     }
+     .section4 .vamo .botones .indicaciones {
+         padding: 15px;
+     }
+     .section4 .vamo .botones p {
+         padding: 10px;
+         margin: 5px;
+         font-size: 14px;
+     }
+ }
+ 
+ @media screen and (max-width: 500px) {
+     .barra nav h2 {
+         font-size: 16px;
+         margin: 0px 5px;
+     }
+ }
+ 
+ @media screen and (max-width: 504px) {
+     .barra nav h2 {
+         font-size: 22px;
+         margin: 0px 60px;
+     }
+     .barra img {
+         margin: 0px 80px;
+     }
+     .header {
+         background: no-repeat center/97.5% url("../img/D_TfdhiXYAY46Fc.jpg");
+         width: 100%;
+         height: 250px;
+     }
+     .header .info {
+         padding: 8px;
+         margin: auto;
+         max-width: 100%;
+         border-radius: 0 20px 20px 0;
+         height: auto;
+         display: inline-block;
+     }
+     .header .info h1 {
+         margin: 0px 5px;
+         padding: 8px;
+         border-radius: 25px;
+         font-size: 20px;
+     }
+     .info p {
+         font-size: 13px;
+         padding: 5px;
+         margin: 0 5px 5px 5px;
+     }
+     /*seccion informacion de formulario */
+     .wow .seccion-formulario {
+         padding: 10px;
+         width: 100%;
+         margin-top: 75px;
+         height: auto;
+         margin-bottom: 75px;
+     }
+     .wow .seccion-formulario h2 {
+         font-size: 20px;
+         padding: 5px;
+     }
+     .wow .seccion-formulario p {
+         font-size: 16px;
+         margin: 0px;
+     }
+     .wow .lista-img {
+         display: grid;
+         grid-template-rows: 250px 1fr;
+         grid-template-columns: repeat(no-repeat);
+         height: 280px;
+         grid-template-areas: "info"" img";
+     }
+     .wow .lista-img .lista {
+         grid-area: info;
+     }
+     .wow .lista-img .img {
+         grid-area: img;
+         text-align: center;
+     }
+     .wow .lista-img .lista p {
+         font-size: 16px;
+         margin: 0px;
+     }
+     .wow .lista-img .lista li {
+         font-size: 16px;
+         margin-left: 30px;
+     }
+     .wow .lista-img .img img {
+         width: 200px;
+         height: auto;
+     }
+     .wow .lista-img .img img:hover {
+         width: 400px;
+         display: block;
+         height: auto;
+     }
+     .wow .parafo1 p {
+         font-size: 12px;
+         margin-top: 110px;
+     }
+     /*section 2 informacion que raiiioss :v*/
+     .dato {
+         margin-top: 200px;
+         margin-bottom: 100px;
+         height: auto;
+         padding: 40px;
+         width: 100%;
+     }
+     .datos {
+         height: 700px;
+         width: 100%;
+         display: grid;
+         grid-template-columns: none;
+         grid-template-rows: 200px 1fr;
+         grid-template-areas: "immg"" req";
+         padding: 20px
+     }
+     .datos .requisitos p {
+         font-size: 16px;
+         padding: 5px;
+     }
+     .datos li {
+         font-size: 20px;
+         margin-top: 10px;
+     }
+     .datos span {
+         margin: 5px;
+         font-size: 16px;
+     }
+     .dato h2 {
+         color: #ffffff;
+         font-size: 30px;
+     }
+     .datos .datoss {
+         grid-area: immg;
+     }
+     .datos .datoss img {
+         width: 200px;
+         text-align: center;
+         margin-top: 5px;
+     }
+     .datos .datoss img:hover {
+         width: 400px;
+         display: block;
+         height: auto;
+     }
+     .datos h3 {
+         padding: 10px;
+         font-size: 14px;
+         margin-top: 30px;
+     }
+     .datos .requisitos {
+         grid-area: req;
+     }
+     /*secction 3*/
+     .section3 {
+         max-height: 1600px;
+     }
+     .section3 div {
+         max-height: 1500px;
+     }
+     .section3 p {
+         font-size: 25px;
+     }
+     .section3 .img {
+         justify-content: center;
+     }
+     .center {
+         display: block;
+         margin: auto;
+     }
+     .section3 img {
+         width: 100%;
+     }
+     .section3 img:hover {
+         width: 350px;
+     }
+     .section3 div h3 {
+         font-size: 19px;
+         padding: 10px;
+         margin: 10px 0px;
+         margin-left: auto;
+         width: 100%;
+         border-radius: 30px;
+     }
+     /*---------seccion vamo a por ello -------*/
+     .section4 .vamo {
+         height: 550px;
+         display: grid;
+         grid-template-columns: none;
+         grid-template-rows: repeat(2 1fr);
+         grid-template-areas: "target"" botones";
+     }
+     /*grid target*/
+     .section4 .target {
+         padding: 15px;
+         background-color: #ffffff;
+         grid-area: target;
+     }
+     .section4 .target p {
+         padding: 25px;
+         justify-content: center;
+         font-size: 14px;
+     }
+     .section4 .target h2 {
+         font-size: 20px;
+         padding: 5px;
+         border: #017cce solid 4px;
+         border-radius: 40px;
+     }
+     .section4 .target .indicaciones {
+         padding: 8px;
+     }
+     .section4 .target .indicaciones h3 {
+         font-size: 14px;
+         padding: 2px;
+     }
+     .section4 .target img {
+         width: 220px;
+     }
+     /*grid botones*/
+     .section4 .vamo .botones {
+         grid-area: botones;
+         padding: 30px;
+         height: auto;
+         border-radius: 35px;
+     }
+     .section4 .vamo .botones a {
+         font-size: 18px;
+         width: 250px;
+         border-radius: 25px;
+         padding: 10px;
+         margin: 10px auto;
+     }
+     .section4 .vamo .botones .indicaciones {
+         padding: 15px;
+     }
+     .section4 .vamo .botones p {
+         padding: 10px;
+         margin: 5px;
+         font-size: 14px;
+     }
+ }
+ 
+ @media screen and (max-width: 440px) {
+     .barra nav h2 {
+         display: none;
+         font-size: 18px;
+         margin: 0px 10px;
+     }
+     .barra nav img {
+         width: 80px;
+         height: auto;
+         margin: 0px 50px;
+     }
+     .header {
+         background: no-repeat center/100% url("../img/D_TfdhiXYAY46Fc.jpg");
+         width: 100%;
+         height: 180px;
+     }
+     .header .info {
+         background-color: #ff4ba5a8;
+         padding: 8px;
+         margin: 0px;
+         max-width: 50%;
+         border-radius: 20px;
+         height: 180px;
+         display: inline-block;
+     }
+     .header .info h1 {
+         margin: 0px 0px;
+         padding: 8px;
+         border-radius: 25px;
+         font-size: 14px;
+     }
+     .header .info p {
+         font-size: 10px;
+         padding: 5px;
+         margin: 0 5px 5px 5px;
+     }
+     .info a {
+         font-size: 16px;
+         border-radius: 25px;
+         padding: 3px 5px;
+     }
+     .wow .lista-img {
+         display: grid;
+         grid-template-rows: 300px 1fr;
+         grid-template-columns: repeat(no-repeat);
+         height: 280px;
+         grid-template-areas: "info"" img";
+     }
+     .wow .parafo1 p {
+         font-size: 12px;
+         margin-top: 150px;
+     }
+     .datos {
+         height: auto;
+         width: 100%;
+         display: grid;
+         grid-template-columns: none;
+         grid-template-rows: 200px 1fr;
+         grid-template-areas: "immg"" req";
+         padding: 20px
+     }
+     .dato {
+         margin-top: 200px;
+         margin-bottom: 100px;
+         max-height: 1300px;
+         height: 1050px;
+         padding: 40px;
+         width: 100%;
+     }
+ }

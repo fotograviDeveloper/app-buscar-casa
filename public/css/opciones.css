@@ -1,0 +1,281 @@
+.botone {
+    height: 100px;
+    margin: 10px;
+}
+
+.botones {
+    height: 60px;
+    width: 450px;
+}
+
+.botone h4 {
+    font-size: 30px;
+    color: #ffffff;
+    font-family: 'Roboto';
+}
+
+.botones input[type="radio"] {
+    display: none;
+    width: 50px;
+    height: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.formulario .botone label {
+    color: #ffffff;
+    background-color: rgba(0, 205, 241, 0.418);
+    padding: 4px 15px 5px 51px;
+    margin: 8px;
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.formulario .botone label:hover {
+    background-color: rgba(10, 14, 243, 0.418);
+}
+
+.formulario .botone label::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background-color: none;
+    border: #014f62ee solid 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 12px;
+}
+
+.formulario .botone input[type="radio"]:checked+label {
+    padding: 5px 15px;
+    background-color: #02ff02d7;
+    border-radius: 25px;
+    color: aliceblue;
+}
+
+.formulario .botone input[type="radio"]:checked+label::before {
+    display: none;
+}
+
+
+/*medioa query opciones  a 1200 px*/
+
+@media screen and (max-width:1200px) {
+    .botone {
+        height: 100px;
+        margin: 10px;
+    }
+    .botones {
+        height: 60px;
+        width: 365px;
+        margin: 2px
+    }
+    .botones input[type="radio"] {
+        display: none;
+        width: 40px;
+        height: 15px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+
+/*media query a 1000px*/
+
+@media screen and (max-width: 1000px) {
+    .botone {
+        height: 100px;
+        margin: 10px;
+    }
+    .botones {
+        height: 50px;
+        width: 265px;
+        padding: 2px;
+    }
+    .botone h4 {
+        font-size: 30px;
+        color: #ffffff;
+        font-family: 'Roboto';
+    }
+    .botones input[type="radio"] {
+        display: none;
+        width: 45px;
+        height: 20px;
+        margin: 2px;
+        padding: 5px;
+    }
+    .formulario .botone label {
+        color: #ffffff;
+        background-color: rgba(0, 205, 241, 0.418);
+        padding: 4px 12px 4px 41px;
+        margin: 3px;
+        display: inline-block;
+        position: relative;
+        font-size: 18px;
+        height: 40px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .formulario .botone label::before {
+        width: 20px;
+        height: 20px;
+        border: #014f62ee solid 2.5px;
+        border-radius: 50%;
+        left: 15px;
+        top: 10px;
+    }
+}
+
+
+/*media a 766px*/
+
+@media screen and (max-width: 766px) {
+    .botone {
+        height: 100px;
+        margin: 10px;
+        width: 450px;
+    }
+    .botones {
+        height: 50px;
+        width: 450px;
+        padding: 6px;
+    }
+    .botone h4 {
+        display: inline-block;
+        text-align: center;
+        font-size: medium;
+        margin: 50px 0px;
+        top: 15px;
+        color: #ffffff;
+        font-family: 'Roboto';
+    }
+    .botones input[type="radio"] {
+        display: none;
+        width: 45px;
+        height: 20px;
+        margin: 2px;
+        padding: 5px;
+    }
+    .formulario .botone label {
+        color: #ffffff;
+        background-color: rgba(0, 205, 241, 0.418);
+        padding: 4px 15px 4px 51px;
+        margin: 0px 10px;
+        font-size: 20px;
+        height: 40px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .formulario .botone label::before {
+        width: 20px;
+        height: 20px;
+        border: #014f62ee solid 2.5px;
+        border-radius: 50%;
+        left: 15px;
+        top: 10px;
+    }
+}
+
+
+/*media a 470px*/
+
+@media screen and (max-width: 470px) {
+    .botone {
+        height: 100px;
+        margin: 10px;
+        width: 380px;
+    }
+    .botones {
+        height: 50px;
+        width: 380px;
+        padding: 6px;
+    }
+    .botone h4 {
+        display: inline-block;
+        text-align: center;
+        font-size: medium;
+        margin: 50px 0px;
+        top: 15px;
+        color: #ffffff;
+        font-family: 'Roboto';
+    }
+    .botones input[type="radio"] {
+        display: none;
+        width: 45px;
+        height: 20px;
+        margin: 2px;
+        padding: 5px;
+    }
+    .formulario .botone label {
+        color: #ffffff;
+        background-color: rgba(0, 205, 241, 0.418);
+        padding: 4px 15px 4px 51px;
+        margin: 0px 10px;
+        font-size: 20px;
+        height: 40px;
+        border-radius: 15px;
+        cursor: pointer;
+    }
+    .formulario .botone label::before {
+        width: 20px;
+        height: 20px;
+        border: #014f62ee solid 2.5px;
+        border-radius: 50%;
+        left: 15px;
+        top: 10px;
+    }
+}
+
+
+/*media a 400px*/
+
+@media screen and (max-width: 400px) {
+    .botone {
+        height: 100px;
+        margin: 10px;
+        width: 300px;
+    }
+    .botones {
+        height: 50px;
+        width: 300px;
+        padding: 6px;
+    }
+    .botone h4 {
+        display: inline-block;
+        text-align: center;
+        font-size: medium;
+        margin: 50px 0px;
+        top: 15px;
+        color: #ffffff;
+        font-family: 'Roboto';
+    }
+    .botones input[type="radio"] {
+        display: none;
+        width: 45px;
+        height: 20px;
+        margin: 2px;
+        padding: 5px;
+    }
+    .formulario .botone label {
+        padding: 4px 12px 4px 45px;
+        margin: 0px 8px;
+        font-size: 15px;
+        height: 35px;
+    }
+    .formulario .botone label::before {
+        width: 18px;
+        height: 18px;
+        border: #014f62ee solid 2.5px;
+        border-radius: 50%;
+        left: 12px;
+        top: 8px;
+    }
+}

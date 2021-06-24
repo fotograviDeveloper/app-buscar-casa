@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search House</title>
+    <link rel="stylesheet" href="../css/formC.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/alert.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <!--esta seccion es el formulario de comprar con credito infonavit -->
+
+
+
+    <div class="container form2 escondido" id="formInfonavit">
+
+        <div class="animated  zoomIn delay-0.5s">
+            <div class=" info ">
+
+                <img src="../img/svg/undraw_cabin_hkfr.svg" alt="">
+                <script type="text/x-handlebars-template" id="template">
+                    {{# each Beers}}
+
+                    <p>{{person.firstname}}{{person.lastname}}</p>
+                    <br /> {{/each}}
+                </script>
+                <h2> Ya casi terminamos </h2>
+
+                <p> Por ultimo es encesario proporcionar una informacion adicional, <br> esto servira para poder encontrar los resultados de manera automatica</p>
+            </div>
+        </div>
+        <div class="animated bounceInLeft delay-0.5s">
+            <div class="container form" id="formulariov">
+                <form action="../html/index.html" id="formInfonavit">
+
+                    <div class="select1"> <span class="pregunta">¿En que municipo vives?</span>
+                        <select class="select" name="location" required id="location">
+                                <option value="">Elige un municipio</option>
+                        <option value="">monterrey</option>
+                        <option value="">Santa Catarina</option>
+                        <option value="">guadalupe</option>
+                        <option value="">Garcia</option>
+                        <option value="">Escobedo</option>
+                        <option value="">San pedro</option>
+                        <option value="">San nicolas</option>
+                    </select>
+                    </div>
+                    <div class="inputs">
+                        <h4> Tu credito infonavit </h4>
+                        <input type="text" id="prestamo" onkeypress=" return soloNumeros(event)" placeholder="Monto de prestamo infonavit ">
+                        <input type="text" id="subcuenta" onkeypress=" return soloNumeros(event)" placeholder="Monto de la subcuenta de vivienda">
+                        <input type="text" id="prestamo2" onkeypress=" return soloNumeros(event)" placeholder="Total del credito ">
+                        <input type="text" id="puntos" onkeypress=" return soloNumeros(event)" placeholder="Puntos actuales (Opcional)">
+                    </div>
+                    <div class="2" id="check">
+                        <input type="checkbox" class="condicion" value="acepto" id="acepto"> <label for="acepto">Hacepto  los terminos y condiciones </label>
+                    </div>
+                    <div class="boton"><button type="submit"> conocer mis resultados</button></div>
+
+                    <div class=" container masInformacion">
+                        <button type="button" class="btn "><a href="../html/tutoral-infonavit.html" >No conosco esta informacion</a></button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--esta seccion es la de compra con efectivo -->
+    <div class="container form2 escondido" id="efectivo">
+
+        <div class="animated  zoomIn delay-0.5s">
+            <div class=" info ">
+
+                <img src="../img/svg/undraw_cabin_hkfr.svg" alt="">
+                <div>
+                    <h2>riki ricon
+                    </h2>
+                </div>
+                <h2> Ya casi terminamos </h2>
+
+                <p> Por ultimo es encesario proporcionar una informacion adicional, <br> esto servira para poder encontrar los resultados de manera automatica</p>
+            </div>
+        </div>
+        <div class="animated bounceInLeft delay-0.5s">
+            <div class="container form" id="formulario2">
+                <form action="../html/index.html" id="formEfectivo">
+
+                    <div class="select1"> <span class="pregunta">¿En que municipo vives?</span>
+                        <select class="select" name="location" required id="location">
+                                <option value="">Elige un municipio</option>
+                        <option value="">monterrey</option>
+                        <option value="">Santa Catarina</option>
+                        <option value="">guadalupe</option>
+                        <option value="">Garcia</option>
+                        <option value="">Escobedo</option>
+                        <option value="">San pedro</option>
+                        <option value="">San nicolas</option>
+                    </select>
+                    </div>
+                    <div class="inputs">
+                        <h4> Compra con efectivo</h4>
+                        <input type="text" id="cantidad" onkeypress=" return soloNumeros(event)" placeholder="¿Cuanto deseas gastar?  ">
+
+                        <input type="text" id="phone" onkeypress=" return soloNumeros(event)" placeholder="numero de contacto (adicional) ">
+
+                    </div>
+                    <div class="2" id="check2">
+                        <input type="checkbox" class="condicion" value="acepto2" id="acepto2"> <label for="acepto">Hacepto  los terminos y condiciones </label>
+                    </div>
+                    <div class="boton"><button type="submit"> conocer mis resultados</button></div>
+
+                    <div class=" container masInformacion">
+                        <button type="button" class="btn "><a href="../html/tutoral-infonavit.html" >me interesa un credito bancario </a></button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--esta seccion es la cortina que escone las otras secciones -->
+    <div class="principal " id="principal">
+        <div class="container Quiero"> Quiero comprar usando ...</div>
+
+        <div class="cortina ">
+            <section class="WOW opcion1" id="seccion1">
+
+                <a href="#" onclick="return cortina1(), formInfonavit()">
+                    <h2>credito infonavit </h2>
+
+                    <img src="../img/svg/undraw_payments_21w6.svg" alt="credito">
+                </a>
+            </section>
+
+            <section class="opcion2 " id="seccion2">
+                <a href="#" onclick="return cortina2(), formEfectivo()">
+                    <h2>efectivo solamente</h2>
+                    <img src="../img/svg/undraw_Savings_dwkw.svg" alt="Efectivo">
+                </a>
+            </section>
+
+        </div>
+    </div>
+    <footer class="wow zoomIn " data-wow-Duration="1s" data-wow-delay=".2s">
+
+        <h4>Consulta los terminos y condiciones en: </h4><a href="#">www.searchhouse/terminos&condiciones.com</a>
+        <h2>&copy; Search House Company | By: Raul Garces</h2>
+    </footer>
+
+    <script src="../js/compra.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="../css/WOW-master/dist/wow.js"></script>
+    <script>
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true, // default
+            live: true // default
+        })
+        wow.init();
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            offset: 90,
+            speed: 1000
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script>
+        // compile the template
+        var template = Handlebars.compile("Handlebars <b>{{doesWhat}}</b>");
+        // execute the compiled template and print the output to the console
+        console.log(template({
+            doesWhat: "rocks!"
+        }));
+    </script>
+    { person: { firstname: "Yehuda", lastname: "Katz", }, }
+
+</body>
+
+
+</html>

@@ -1,0 +1,1400 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    margin: 5px 0px 0px 10px;
+    font-size: 25px;
+    padding: 0%;
+    font-family: 'Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    padding: 10px;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+body {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+main .titulo {
+    font-size: 60px;
+    text-align: center;
+    text-decoration: solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px 0px 0px 0px;
+}
+
+
+/*nav bar traida de bootstrab*/
+
+.barra1 {
+    background-color: #0099d63a;
+    height: 100px;
+    padding: 5px;
+}
+
+.barra .navbar nav .collapse ul li a {
+    color: #ffffff;
+}
+
+.barra .navbar nav .collapse ul li a:hover {
+    color: aliceblue;
+}
+
+nav img {
+    width: auto;
+    height: 50px;
+    margin: 1px 5px;
+}
+
+nav h2 {
+    font-size: 35px;
+    padding: 15px;
+    color: #ffffff;
+    margin: 0px 100px;
+}
+
+nav .navbar-collapse {
+    max-width: 900px;
+    text-align: center;
+    margin: 0px 5px;
+    padding: 1px;
+}
+
+nav .navbar-collapse .navbar-nav {
+    background-color: #0099d698;
+    border-radius: 20px;
+}
+
+nav .navbar-collapse .navbar-nav a {
+    color: #ffffff;
+}
+
+nav .navbar-collapse li .section {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+nav .navbar-collapse a:hover {
+    color: #000000;
+    background-color: #ffa4c9;
+    border-radius: 20px;
+}
+
+.ir {
+    background-color: rgb(0, 112, 156);
+    padding: 10px;
+    width: 130px;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.ir:hover {
+    background-color: #38afff;
+}
+
+.ir h5 {
+    margin: 0px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+/*--------------header carrucel -----------*/
+
+header {
+    width: 100%;
+    max-height: 600px;
+}
+
+
+/*sider*/
+
+header .carrucel .slide {
+    height: 650px;
+    display: grid;
+    grid-area: slider;
+}
+
+header .carrucel .slide .carousel-inner {
+    width: 100%;
+    height: 650px;
+    max-height: 670px;
+}
+
+header .carrucel .slide .carousel-inner img {
+    height: 635px;
+}
+
+
+/*next- prev */
+
+header .carousel-indicators li {
+    background-color: rgba(7, 170, 182, 0.678);
+    border-radius: 50%;
+    height: 30px;
+}
+
+header .carousel .carousel-control-prev {
+    max-width: 50px;
+}
+
+header .carousel .carousel-control-next {
+    max-width: 50px;
+}
+
+
+/*next-prev hover*/
+
+header .carousel .carousel-control-next:hover {
+    background-color: rgba(5, 170, 182, 0.514);
+}
+
+header .carousel .carousel-control-prev:hover {
+    background-color: rgba(5, 170, 182, 0.514);
+}
+
+
+/*---------------information 1-----------*/
+
+main section {
+    margin: 150px 0px;
+    padding: 5px;
+}
+
+section .information {
+    padding: 25px;
+    margin: 150px 0px;
+}
+
+
+/*img logo*/
+
+main .logoq {
+    margin: 100px 0;
+    height: 400px;
+}
+
+main section .logo {
+    height: 400px;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-areas: "logo"" texto";
+}
+
+main section .logo img {
+    grid-area: logo;
+    width: 400px;
+}
+
+main section .logo h1 {
+    display: grid;
+    font-size: 60px;
+    grid-area: texto;
+    text-align: center;
+    color: #000000;
+}
+
+
+/*----------------section renegado--------*/
+
+main .renegado {
+    height: 550px;
+    display: grid;
+    grid-template-rows: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img info";
+}
+
+.renegado .img1 {
+    grid-area: img;
+    max-height: 550px;
+    margin: 30px 30px;
+}
+
+.renegado .img1 img {
+    width: 500px;
+}
+
+section .information {
+    margin: auto;
+    grid-area: info;
+}
+
+section .information p {
+    font-size: 25px;
+}
+
+
+/* ------------secction info 2 --------------- */
+
+.information2 {
+    height: 800px;
+    display: grid;
+    grid-template-rows: 120px 1fr;
+    grid-template-areas: " t1 " "infoimg";
+}
+
+section .t1 .infoimg {
+    display: grid;
+    grid-area: infoimg;
+    grid-template-areas: "info img";
+    grid-template-columns: 50% 50%;
+}
+
+.information2 h2 {
+    width: 120px;
+    padding: 30px;
+    color: #000000;
+    font-size: 50px;
+    width: 100%;
+    display: grid;
+    grid-area: t1;
+}
+
+.information2 .info {
+    display: block;
+    float: right;
+    justify-content: left;
+    justify-items: left;
+    grid-area: info;
+    height: 500px;
+    margin: 25px 15px;
+    width: 600px;
+}
+
+.information2 .info h3 {
+    font-size: 25px;
+    padding: 10px;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.information2 .resaalta {
+    background-color: #0099d6ca;
+    border-radius: 25px;
+}
+
+.information2 .resaltaMenos {
+    background-color: #7fd9fdca;
+    border-radius: 25px;
+}
+
+.information2 img {
+    grid-area: img;
+    width: 450px;
+    margin: 25px;
+    padding: 50px;
+}
+
+
+/*------------secction info 3 ----------*/
+
+section .info3 {
+    height: 500px;
+    display: grid;
+    grid-template-rows: 150px 350px;
+    grid-template-areas: "titulo" "inf";
+}
+
+section .info3 h2 {
+    display: grid;
+    grid-area: titulo;
+    margin: 5px;
+    padding: 10px;
+}
+
+section .info3 p {
+    display: grid;
+    grid-area: inf;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 35px;
+    padding: 10px;
+}
+
+
+/*informacion de registro*/
+
+.information-description {
+    text-align: justify;
+    width: 500px;
+    height: 610px;
+    margin-left: 10px;
+    border-radius: 25px;
+    grid-area: descripcion;
+    grid-auto-columns: none;
+    grid-template-rows: 220px 400px;
+    grid-template-areas: "img" "info";
+}
+
+.information-description p {
+    margin: 5px 0px 0px 10px;
+    font-size: 20px;
+    padding: 0%;
+    grid-area: info;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    padding: 10px;
+}
+
+
+/* img*/
+
+.information-description img {
+    width: 200px;
+    height: auto;
+    grid-area: img;
+    padding: 10px;
+}
+
+
+/*---------section info 4-------*/
+
+.contactanos {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    grid-template-areas: "contactanos contactos";
+    margin: 50px 0px;
+}
+
+.contactano img {
+    width: 400px;
+    grid-area: contactanos;
+}
+
+.contactos {
+    padding: 25px;
+    margin: 0;
+    grid-area: contactos;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contactos a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(0, 128, 145);
+}
+
+.preguntas {
+    background-color: #38afff96;
+    padding: 10px;
+    border-radius: 30px;
+    height: auto;
+    color: #ffffff;
+}
+
+.preguntas p {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*-----------------footer---------------*/
+
+footer {
+    background-color: rgba(20, 20, 20, 0.986);
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+
+footer h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin: 2px 0px;
+}
+
+footer h2 {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+}
+
+footer a {
+    color: aqua;
+    margin: 10px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+/*--------------------media query ---------------------*/
+
+@media screen and (max-width: 1300px) {
+    nav h2 {
+        font-size: 35px;
+        padding: 15px;
+        color: #ffffff;
+        margin: 0px 50px;
+    }
+}
+
+
+/*****/
+
+@media screen and ( max-width: 1200px) {
+    .barra1 {
+        background-color: #0099d63a;
+        width: 100%;
+        height: 100px;
+        padding: 5px;
+    }
+    .barra .navbar nav .collapse ul li a {
+        color: #ffffff;
+        font-size: 15px;
+    }
+    nav img {
+        width: 150px;
+        height: auto;
+        margin: 1px 5px;
+    }
+    nav h2 {
+        font-size: 35px;
+        padding: 15px;
+        color: #ffffff;
+        margin: 0px 5px;
+    }
+    nav .navbar-collapse {
+        text-align: center;
+        margin: 0px 5px;
+        padding: 1px;
+    }
+}
+
+@media screen and ( max-width: 1000px) {
+    .barra .navbar nav .navbar-toggler {
+        border: none;
+        background-color: rgb(255, 255, 255);
+    }
+    .barra .navbar nav .navbar-toggler .navbar-toggler-icon {
+        color: #ffa4c9;
+        font-size: 18;
+    }
+    nav img {
+        width: 150px;
+        height: auto;
+        margin: 1px 5px;
+    }
+    nav h2 {
+        font-size: 35px;
+        padding: 15px;
+        color: #ffffff;
+        margin: 0px 5px;
+    }
+}
+
+@media screen and ( max-width: 460px) {
+    .barra .navbar nav .navbar-toggler {
+        border: none;
+        background-color: rgb(255, 255, 255);
+    }
+    .barra .navbar nav .navbar-toggler .navbar-toggler-icon {
+        color: #ffa4c9;
+        font-size: 18;
+    }
+    nav img {
+        width: 100px;
+        height: auto;
+        margin: 1px 5px;
+    }
+    nav h2 {
+        font-size: 20px;
+        padding: 15px;
+        color: #ffffff;
+        margin: 0px 5px;
+    }
+    section .contactanos {
+        width: 100%;
+    }
+    section .contactanos img {
+        width: 200px;
+    }
+    section .contactano {
+        max-width: 200px;
+    }
+}
+
+
+/*media query section info 1 a 1200px*/
+
+@media screen and (max-width :1200px) {
+    header {
+        width: 100%;
+        height: 660px;
+        max-height: 660px;
+    }
+    /*sider*/
+    header .carrucel .slide {
+        max-height: 660px;
+    }
+    header .carrucel .slide .carousel-inner {
+        max-height: 660px;
+    }
+    header .carrucel .slide .carousel-inner img {
+        height: 660px;
+    }
+    /*next- prev */
+    header .carousel .carousel-control-prev {
+        max-width: 50px;
+        height: 660px;
+    }
+    header .carousel .carousel-control-next {
+        max-width: 50px;
+        height: 660px;
+    }
+    /*next-prev hover*/
+    header .carousel .carousel-control-next:hover {
+        background-color: rgba(5, 170, 182, 0.514);
+        max-height: 660px;
+    }
+    header .carousel .carousel-control-prev:hover {
+        background-color: rgba(5, 170, 182, 0.514);
+        max-height: 660px;
+    }
+    /*wave */
+    .wave {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width :1000px) {
+    header {
+        width: 100%;
+        max-height: 580px;
+    }
+    /*sider*/
+    header .carrucel .slide {
+        height: 500px;
+        max-height: 500px;
+    }
+    header .carrucel .slide .carousel-inner {
+        width: 100%;
+        max-height: 500px;
+    }
+    header .carrucel .slide .carousel-inner img {
+        height: 500px;
+    }
+    /*next- prev */
+    header .carousel .carousel-control-prev {
+        max-width: 50px;
+        max-height: 500px;
+    }
+    header .carousel .carousel-control-next {
+        max-width: 50px;
+        max-height: 500px;
+    }
+    /*next-prev hover*/
+    header .carousel .carousel-control-next:hover {
+        background-color: rgba(5, 170, 182, 0.514);
+        max-height: 500px;
+    }
+    header .carousel .carousel-control-prev:hover {
+        background-color: rgba(5, 170, 182, 0.514);
+        max-height: 500px;
+    }
+    /*wave */
+    .wave {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width :766px) {
+    header {
+        width: 100%;
+        height: 400px;
+    }
+    /*sider*/
+    header .carrucel .slide {
+        height: 400px;
+    }
+    header .carrucel .slide .carousel-inner img {
+        height: 400px;
+        width: 100%;
+    }
+    header .carrucel .slide .carousel-inner {
+        width: 100%;
+        max-height: 400px;
+    }
+    /*next- prev */
+    header .carousel .carousel-control-prev {
+        max-width: 50px;
+        max-height: 400px;
+    }
+    header .carousel .carousel-control-next {
+        max-width: 50px;
+        max-height: 400px;
+    }
+    /*next-prev hover*/
+    header .carousel .carousel-control-next:hover {
+        background-color: rgba(5, 170, 182, 0.514);
+        max-height: 400px;
+    }
+    header .carousel .carousel-control-prev:hover {
+        background-color: rgba(5, 170, 182, 0.514);
+        max-height: 400px;
+    }
+    /*wave */
+}
+
+@media screen and (max-width :460px) {
+    header {
+        width: 100%;
+        height: 200px;
+    }
+    /*sider*/
+    header .carrucel .slide {
+        height: 200px;
+    }
+    header .carrucel .slide .carousel-inner {
+        width: 100%;
+        max-height: 200px;
+    }
+    header .carrucel .slide .carousel-inner img {
+        height: 200px;
+    }
+    /*next- prev */
+    header .carousel .carousel-control-prev {
+        max-width: 35px;
+        max-height: 200px;
+    }
+    header .carousel .carousel-control-next {
+        max-width: 35px;
+        max-height: 200px;
+    }
+    /*next-prev hover*/
+    header .carousel .carousel-control-next:hover {
+        background-color: rgba(5, 170, 182, 0.514);
+        max-height: 200px;
+    }
+    header .carousel .carousel-control-prev:hover {
+        background-color: rgba(5, 170, 182, 0.514);
+        max-height: 200px;
+    }
+}
+
+
+/* -------------media query de informacion 1 logoq------------------*/
+
+@media screen and (max-width: 1200px) {
+    .logoq .logo img {
+        max-width: 600px;
+        text-align: center;
+        margin: 0px 350px;
+    }
+    .logoq .logo h1 {
+        max-width: 1000px;
+        font-size: 50px;
+        height: 350px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        max-width: 700px;
+    }
+    .logoq {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .logoq .logo img {
+        max-width: 300px;
+        width: 300px;
+        margin: 0px 200px;
+        text-align: center;
+    }
+    .logoq .logo h1 {
+        max-width: 700px;
+        font-size: 35px;
+        height: 200px;
+        margin: 05px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .logo {
+        max-width: 500px;
+    }
+    .logoq {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .logoq .logo img {
+        max-width: 300px;
+        width: 300px;
+        margin: 0px 150px;
+        text-align: center;
+    }
+    .logoq .logo h1 {
+        max-width: 500px;
+        font-size: 25px;
+        height: 200px;
+        margin: 05px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo {
+        width: 100%;
+    }
+    .logoq {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .logoq .logo img {
+        max-width: 300px;
+        width: 250px;
+        margin: 0px 70px;
+        text-align: center;
+    }
+    .logoq .logo h1 {
+        max-width: 350px;
+        font-size: 20px;
+        height: 200px;
+        margin: 05px;
+        text-align: center;
+    }
+}
+
+
+/*-----------informacion1 a 1200px--------*/
+
+@media screen and (max-width: 1200px) {
+    main .renegado {
+        height: 600px;
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: 500 1fr;
+        grid-template-areas: "img info";
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .renegado .img1 {
+        display: grid;
+        grid-area: img;
+        margin: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .renegado .img1 img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section .information {
+        display: grid;
+        grid-area: info;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    section .information p {
+        font-size: 25px;
+        margin: 15px;
+    }
+}
+
+
+/*-------media a 1000px*/
+
+@media screen and (max-width: 1000px) {
+    main .renegado {
+        height: 600px;
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: 300 500px;
+        grid-template-areas: "img info";
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .renegado .img1 {
+        display: grid;
+        grid-area: img;
+        margin: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .renegado .img1 img {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section .information {
+        display: grid;
+        grid-area: info;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section .information p {
+        font-size: 20px;
+        margin: 15px;
+    }
+}
+
+
+/*-------media a 766px*/
+
+@media screen and (max-width: 766px) {
+    main .renegado {
+        height: 500px;
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: 200px 300px;
+        grid-template-areas: "img info";
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .renegado .img1 {
+        display: grid;
+        grid-area: img;
+        margin: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .renegado .img1 img {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    section .information {
+        display: grid;
+        grid-area: info;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    section .information h2 {
+        font-size: 40px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    section .information p {
+        font-size: 18px;
+        margin: 10px;
+    }
+}
+
+
+/*-------media a 400px*/
+
+@media screen and (max-width: 420px) {
+    main .renegado {
+        height: 700px;
+        width: 100%;
+        text-align: center;
+        display: grid;
+        padding: 20px;
+        grid-template-rows: 200px 400px;
+        grid-template-columns: none;
+        grid-template-areas: "img"" info";
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .renegado .img1 {
+        display: grid;
+        grid-area: img;
+        margin: 10px 0px 0px 10px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .renegado .img1 img {
+        width: 250px;
+        margin: 0px 35px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    section .information {
+        display: grid;
+        height: 500px;
+        width: 380px;
+        grid-area: info;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    section .information h2 {
+        font-size: 30px;
+        margin: 10px 0px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    section .information p {
+        font-size: 15px;
+        margin: 10px;
+    }
+}
+
+
+/* -------------media query de informacion 2------------------*/
+
+
+/*----------media information2  a 1200px----------*/
+
+@media screen and (max-width :1200px) {
+    .information2 {
+        width: 1fr;
+        height: 800px;
+    }
+}
+
+@media screen and (max-width :1200px) {
+    section .t1 .infoimg {
+        display: grid;
+        grid-template-areas: "info img";
+        grid-template-columns: 450px 450px;
+    }
+}
+
+@media screen and (max-width :1200px) {
+    section .t1 .infoimg .info {
+        width: 400px;
+        height: 700px;
+        font-size: 18px;
+        /*me quede aqui*/
+        grid-area: info;
+    }
+}
+
+@media screen and (max-width :1200px) {
+    section .t1 .infoimg img {
+        width: 400px;
+        grid-area: img;
+        margin: 50px;
+        padding: 10px;
+    }
+}
+
+
+/*----------media information2  a 1000px----------*/
+
+@media screen and (max-width :1000px) {
+    .information2 {
+        width: 1fr;
+        height: 500px;
+    }
+    section .t1 .infoimg {
+        height: 400px;
+        display: grid;
+        grid-template-areas: "info img";
+        grid-template-columns: repeat(2, 1fr);
+    }
+    section .t1 .infoimg .info {
+        width: 300px;
+        height: 350px;
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        grid-area: info;
+    }
+    section .t1 .infoimg .info h3 {
+        font-size: 18px;
+    }
+    section .t1 .infoimg .info h3 .resaalta {
+        color: #ffffff;
+        width: 500px;
+    }
+    section .t1 .infoimg .imagen img {
+        width: 350px;
+        padding: 0px;
+        grid-area: img;
+        margin: 10px 10px;
+    }
+}
+
+
+/*----------media information2  a 766px----------*/
+
+@media screen and (max-width :766px) {
+    .information2 {
+        width: 1fr;
+        height: 850px;
+        margin-top: 30px;
+    }
+    section .t1 {
+        display: grid;
+        grid-template-areas: "titulo""imginfo";
+        grid-template-rows: 100px 800px;
+        grid-template-columns: none;
+    }
+    section .t1 .infoimg {
+        grid-area: imginfo;
+        grid-template-areas: "img""info";
+        grid-template-rows: 300px 500px;
+        grid-template-columns: none;
+    }
+    section .t1 .titulo {
+        grid-area: titulo;
+    }
+    section .t1 .infoimg .info {
+        width: 350px;
+        height: 500px;
+        font-size: 15px;
+        grid-area: info;
+    }
+    section .t1 .infoimg .info h3 {
+        font-size: 20px;
+        width: 475px;
+    }
+    section .t1 .infoimg .imagen img {
+        width: 300px;
+        grid-area: img;
+        margin: 50px 100px;
+    }
+}
+
+
+/*----------media information2  a 420px----------*/
+
+@media screen and (max-width :490px) {
+    .information2 {
+        width: 1fr;
+        height: 800px;
+        margin-top: 30px;
+    }
+    section .t1 {
+        height: 800px;
+        display: grid;
+        grid-template-areas: "titulo""imginfo";
+        grid-template-rows: 80px 600px;
+        grid-template-columns: none;
+    }
+    section .t1 .infoimg {
+        display: grid;
+        grid-area: imginfo;
+        grid-template-areas: "img""info";
+        grid-template-rows: 220px 400px;
+        grid-template-columns: none;
+    }
+    section .t1 .titulo {
+        grid-area: titulo;
+    }
+    section .t1 .titulo h2 {
+        font-size: 50px
+    }
+    section .t1 .infoimg .info {
+        width: 250px;
+        height: 300px;
+        font-size: 15px;
+        grid-area: info;
+    }
+    section .t1 .infoimg .info h3 {
+        font-size: 18px;
+        width: 370px;
+        color: #ffffff;
+    }
+    section .t1 .infoimg .imagen img {
+        width: 280px;
+        grid-area: img;
+        margin: 20px 0px;
+        margin-left: 100px
+    }
+}
+
+
+/*media info 2 a 440*/
+
+@media screen and ( max-width:440px) {
+    .information2 {
+        width: 1fr;
+        height: 800px;
+        margin-top: 30px;
+    }
+    section .t1 {
+        height: 800px;
+        display: grid;
+        grid-template-areas: "titulo""imginfo";
+        grid-template-rows: 200px 600px;
+        grid-template-columns: none;
+    }
+    section .t1 .infoimg {
+        display: grid;
+        grid-area: imginfo;
+        grid-template-areas: "img""info";
+        grid-template-rows: 200px 400px;
+        grid-template-columns: none;
+    }
+    section .t1 .titulo {
+        grid-area: titulo;
+    }
+    section .t1 .titulo h2 {
+        font-size: 16px;
+        padding: 10px;
+        height: 100px;
+    }
+    section .t1 .infoimg .info {
+        width: 250px;
+        height: 300px;
+        font-size: 15px;
+        grid-area: info;
+    }
+    section .t1 .infoimg .info h3 {
+        font-size: 18px;
+        width: 300px;
+        color: #ffffff;
+    }
+    section .t1 .infoimg .imagen img {
+        width: 280px;
+        grid-area: img;
+        margin: 20px 0px;
+        margin-left: 50px
+    }
+}
+
+
+/*----------------------info 3-------------*/
+
+@media screen and (max-width:766px) {
+    section .info3 {
+        height: 500px;
+        display: grid;
+        grid-template-rows: 150px 600px;
+        grid-template-areas: "titulo" "inf";
+    }
+    section .info3 h2 {
+        display: grid;
+        grid-area: titulo;
+        margin: 5px;
+        padding: 10px;
+    }
+    section .info3 p {
+        display: grid;
+        grid-area: inf;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 35px;
+        padding: 10px;
+    }
+    section .info3 {
+        height: 500px;
+        display: grid;
+        font-size: 50px;
+        grid-template-rows: 150px 600px;
+        grid-template-areas: "titulo" "inf";
+    }
+    section .info3 h2 {
+        display: grid;
+        font-size: 40px;
+        grid-area: titulo;
+        margin: 20px;
+        padding: 10px;
+    }
+    section .info3 p {
+        display: grid;
+        grid-area: inf;
+        font-size: 18px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin: 25px;
+        padding: 10px;
+    }
+}
+
+
+/*----------media query informacion 3 a 766px-----*/
+
+@media screen and (max-width: 766px) {
+    .contactanos {
+        height: 200px;
+        display: grid;
+        grid-template-areas: "titulo info";
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%
+    }
+    .contactanos h2 {
+        grid-area: titulo;
+    }
+    .contactanos .contactano h2 {
+        font-size: 40px
+    }
+    .contactanos .contactos {
+        max-width: 300px;
+        grid-area: info;
+        height: 200px;
+        margin: 5px 10px;
+    }
+    .contactanos .contactos a {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+/*media a 460 contactos*/
+
+@media screen and (max-width: 600px) {
+    .contactanos {
+        height: 500px;
+        display: grid;
+        margin: 50px;
+        grid-template-areas: "titulo"" info";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+        max-width: 100%
+    }
+    .contactanos h2 {
+        grid-area: titulo;
+    }
+    .contactanos .contactano h2 {
+        font-size: 50px
+    }
+    .contactanos .contactos {
+        max-width: 100%;
+        grid-area: info;
+        height: 180px;
+    }
+    .contactanos .contactos a {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
+/*footer*/
+
+@media screen and (max-width: 1000px) {
+    footer {
+        color: #ffffff;
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        padding: 15px;
+        height: 100px;
+        text-align: center;
+    }
+    footer h4 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        margin: 2px 0px;
+    }
+    footer h2 {
+        margin: 5px;
+        padding: 10px;
+    }
+    footer a {
+        color: aqua;
+        font-size: 22px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    footer {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        padding: 10px;
+        height: 120px;
+        text-align: center;
+    }
+    footer h4 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 18px;
+        margin: 2px 0px;
+    }
+    footer h2 {
+        margin: 5px;
+        padding: 10px;
+    }
+    footer a {
+        color: aqua;
+        font-size: 18px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        color: #ffffff;
+        width: 100%;
+        padding: 10px;
+        margin: 50px 0px 0px 0px;
+        height: 100px;
+        text-align: center;
+    }
+    footer h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        margin: 2px 0px;
+        padding: 5px
+    }
+    footer h4 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        margin: 2px 0px;
+        padding: 5px
+    }
+    footer a {
+        color: aqua;
+        font-size: 15px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    footer {
+        color: #ffffff;
+        width: 100%;
+        padding: 10px;
+        margin: 50px 0px 0px 0px;
+        height: 90px;
+        text-align: center;
+    }
+    footer h2 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 12px;
+        margin: 2px 0px;
+        padding: 1px
+    }
+    footer h4 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 16px;
+        margin: 2px 0px;
+        padding: 1px
+    }
+    footer a {
+        color: aqua;
+        font-size: 16px;
+        padding: 5px;
+    }
+}

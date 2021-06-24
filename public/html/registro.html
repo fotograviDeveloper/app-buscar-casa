@@ -1,0 +1,52 @@
+{{{
+
+<section class="container wow zoomIn registro" data-wow-Duration="1s" data-wow-delay=".2s" id="reg">
+
+
+    <div class="formulario" id="formulario">
+
+        <div class="registro">
+
+            <form class="validacion" id="form" action="/registro" method="POST" name="formulario" onsubmit="return comprobar()">
+                <H2>Registrate</H2>
+                <input class="nombre" type="text" id="nombre" name="nombre" onkeypress="return soloLetras(event) " onpaste="return false" placeholder="Nombre completo">
+
+                <input class="correo" type="text" id="correo" name="correo" placeholder="Correo electronico">
+                <input class="contraseña" type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
+                <input class="confirmacion" type="password" id="confirmacion" name="confirmacion" placeholder="Confirmar contraseña">
+
+                <input class="celular" type="text" id="numero" name="telefono" onkeypress=" return soloNumeros(event)" placeholder="Numero de celular">
+
+
+                <div class="perfil">
+                    <button type="submit">Crear perfil</button>
+                    <a href="/login">Ya tengo cuenta</a>
+                </div>
+
+
+            </form>
+        </div>
+        <div class="animated cuidado " id="cuidado">
+            <p>Verifica tu informacion </p> <br>
+            <p class="rojo"> rojo: es porque esta vacio </p><br>
+            <p class="amarillo">amarillo: hay un error verifica que todo este bien escrito</p>
+        </div>
+
+
+
+
+        <div id="seleccionaAlgo" class="animated aler  ">
+            <h5>No has seleccionado ninguna opcion. Por favor seleciona comprar o vender para continuar con el registro. <br> <br> Despus has click en<br> "crear perfil" </h5>
+
+        </div>
+        <div class="information-description">
+
+            <img src="../img/svg/pensando.svg" alt="">
+
+            <p>¿Te gustaria estrenar o vender tu casa? Pero... ¿no sabes como? <br> <br> Ya sea que desees vender o comprar, lo único que tienes que hacer es registrarte, elegir una opción, <br>y Search House se encargara de encontrar el mejor resultado
+                para ti, en cuestion de minutos. <br> Recuerda, alguien podria estar buscando lo que tu vendes, o, vender lo que tu buscas. </p>
+        </div>
+    </div>
+</section>
+
+}}}

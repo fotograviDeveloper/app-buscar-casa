@@ -1,0 +1,630 @@
+*:defined {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: rgb(62, 199, 242);
+    background: linear-gradient(90deg, rgba(62, 199, 242, 1) 0%, rgba(44, 85, 230, 0.4318102240896359) 53%, rgba(93, 88, 247, 0.4962359943977591) 100%);
+}
+
+.form2 {
+    max-width: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 650px 1fr;
+    grid-template-areas: "info form";
+    text-align: center;
+    padding: 15px;
+    height: auto;
+}
+
+.form2.escondido {
+    display: none;
+}
+
+
+/*div info*/
+
+.info {
+    grid-area: info;
+}
+
+.form2 img {
+    width: 200px;
+}
+
+.form2 h2 {
+    font-size: 50px;
+    margin: auto;
+    padding: 15px;
+    justify-content: left;
+    color: aliceblue;
+}
+
+.form2 p {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 10px;
+    padding: 15px;
+    justify-content: left;
+}
+
+h4:defined {
+    font-size: 18px;
+    height: 35px;
+    padding: 5px;
+    color: #ffffff;
+}
+
+
+/*div form*/
+
+.form {
+    display: grid;
+    grid-area: form;
+}
+
+form {
+    max-width: 400px;
+    height: auto;
+    background-color: rgb(30, 154, 255);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.select1 {
+    height: 100px;
+    padding: 10px;
+    margin: 30px 0px;
+}
+
+.select1 span {
+    margin: 5px;
+    padding: 2px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.select1 select {
+    border-radius: 25px;
+    height: 50px;
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+form .inputs input[type="text"] {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+label {
+    font-size: 18px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 100px;
+}
+
+.boton button {
+    padding: 10px 60px;
+    margin: 20px;
+    height: 55px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(2, 187, 26);
+    border-radius: 50px;
+    font-size: 20px;
+    -webkit-transition: all 0.3 ease-in-out;
+    -o-transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+    box-shadow: black 2, 25px 25px;
+}
+
+.boton button:hover {
+    background: rgb(13, 177, 24);
+    background: linear-gradient(90deg, rgb(5, 180, 78) 0%, rgb(19, 241, 63) 53%, rgb(4, 231, 87) 100%);
+}
+
+.masInformacion button {
+    border-radius: 20px;
+    color: #ffffff;
+    margin: 10px 0px 20px 0px;
+    border: #bbbbbb solid 3px;
+}
+
+.masInformacion button:hover {
+    border: rgb(0, 101, 160) solid 3px;
+    background-color: rgb(0, 162, 255);
+}
+
+.masInformacion a {
+    color: #bebebe;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.masInformacion a:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*footer*/
+
+footer:defined {
+    padding: 20px;
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+    -webkit-transition: all 0.5 ease;
+    -o-transition: all 0.5 ease;
+    transition: all 0.35 ease;
+}
+
+footer:hover {
+    background-color: rgba(173, 253, 253, 0.233);
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer h2 {
+    font-size: 25px;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+
+/*media query a 1200*/
+
+@media screen and (max-width: 1200px) {}
+
+.form2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "info form";
+}
+
+
+/*media query a 1000*/
+
+@media screen and (max-width: 1000px) {
+    .form2 h2 {
+        font-size: 40px;
+    }
+    .form2 p {
+        font-size: 20px;
+    }
+    .select1 span {
+        font-size: 20px;
+    }
+    .boton button {
+        font-size: 19px;
+        height: 60px;
+        padding: 3px 60px;
+    }
+    footer:defined {
+        padding: 5px;
+        height: 100px;
+        margin: 10px 0px 0px 0px;
+    }
+    footer h4 {
+        font-size: 20px;
+        margin: 0px 0px 10px 0px;
+        padding: 15px;
+        height: 60px;
+    }
+    footer h2 {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    footer a {
+        font-size: 20px;
+        display: inline-block;
+        margin: 0px 0px 10px 0px;
+        padding: 15px;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .form2 h2 {
+        font-size: 35px;
+    }
+    .form2 p {
+        font-size: 17px;
+    }
+    label {
+        font-size: 16px;
+        padding: 10px;
+        margin: 20px;
+        margin-bottom: 100px;
+    }
+    .form form input[type="text"] {
+        border-radius: 20px;
+        width: 250px;
+        margin: 5px;
+    }
+    .select1 span {
+        font-size: 16px;
+    }
+    .boton button {
+        font-size: 16px;
+        height: 60px;
+        padding: 3px 60px;
+    }
+    .masInformacion button {
+        border: solid 2px;
+    }
+    .masInformacion a {
+        font-size: 16px;
+    }
+    footer:defined {
+        padding: 5px;
+        height: 100px;
+        margin: 10px 0px 0px 0px;
+    }
+    footer h4 {
+        font-size: 20px;
+        margin: 0px 0px 10px 0px;
+        padding: 15px;
+        height: 60px;
+    }
+    footer h2 {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+    footer a {
+        font-size: 20px;
+        display: inline-block;
+        margin: 0px 0px 10px 0px;
+        padding: 15px;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .form2 {
+        display: grid;
+        text-align: center;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "info ""form";
+    }
+    .form2 h2 {
+        font-size: 40px;
+    }
+    .form2 p {
+        font-size: 20px;
+    }
+    label {
+        font-size: 16px;
+        padding: 10px;
+        margin: 20px;
+        margin-bottom: 100px;
+    }
+    .form form input[type="text"] {
+        border-radius: 20px;
+        width: 350px;
+        margin: 5px;
+    }
+    .select1 span {
+        font-size: 16px;
+    }
+    .boton button {
+        font-size: 16px;
+        height: 60px;
+        padding: 3px 60px;
+    }
+    .masInformacion button {
+        border: solid 2px;
+    }
+    .masInformacion a {
+        font-size: 16px;
+    }
+    footer h2 {
+        margin: 20px 0;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form form input[type="text"] {
+        border-radius: 20px;
+        width: 250px;
+        margin: 5px;
+    }
+    footer:defined {
+        padding: 5px;
+        height: 100px;
+        margin: 30px 0px 0px 0px;
+    }
+    footer h4 {
+        font-size: 18px;
+        margin: 0px 0px 10px 0px;
+        padding: 15px;
+        height: 60px;
+    }
+    footer h2 {
+        margin: 20px 0;
+        font-size: 12px;
+    }
+    footer a {
+        font-size: 18px;
+        display: inline-block;
+        margin: 0px 0px 10px 0px;
+        padding: 15px;
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .form form input[type="text"] {
+        border-radius: 20px;
+        width: 250px;
+        margin: 5px;
+    }
+    footer:defined {
+        padding: 1px;
+        height: 100px;
+        margin: 30px 0px 0px 0px;
+    }
+    footer h4 {
+        font-size: 14px;
+        margin: 0px 0px 10px 0px;
+        padding: 2px;
+    }
+    footer h2 {
+        margin: 20px 0;
+        font-size: 10px;
+    }
+    footer a {
+        font-size: 14px;
+        display: inline-block;
+        margin: 0px 0px 10px 0px;
+        padding: 15px;
+        color: #ffffff;
+    }
+}
+
+
+/*estilos del formulario de efectivo */
+
+.efectivo {
+    display: block;
+}
+
+.efectivo.escondido {
+    display: none;
+}
+
+
+/*estilo para la seleccion y animacion de cortinas */
+
+.principal {
+    display: block;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.principal.actived {
+    display: none;
+}
+
+.Quiero {
+    border-radius: 25px;
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cortina {
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-areas: "op1 op2";
+    height: 600px;
+}
+
+.cortina .opcion1 {
+    grid-area: op1;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    border-radius: 0px 25px 25px 0px;
+    background-color: #f5bc8d;
+    text-align: center;
+    padding: 50px;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.cortina .opcion1.actived {
+    transform: translate(150px, 0);
+    -webkit-transform: translate(-750px, 0);
+    /** Chrome & Safari **/
+}
+
+.cortina .opcion1:hover {
+    background-color: rgba(64, 142, 243, 0.952);
+}
+
+.cortina .opcion2 {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    border-radius: 25px 0px 0px 25px;
+    background-color: #fac9a0;
+    grid-area: op2;
+    text-align: center;
+    padding: 50px;
+    -webkit-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.cortina .opcion2.actived {
+    transform: translate(150px, 0);
+    -webkit-transform: translate(750px, 0);
+    /** Chrome & Safari **/
+}
+
+.cortina .opcion2:hover {
+    background-color: rgba(64, 142, 243, 0.952);
+}
+
+.cortina a {
+    color: #dfe6ff;
+    font-size: 35px;
+}
+
+.cortina a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.cortina img {
+    width: 450px;
+    margin: 0px;
+    margin-top: 75px;
+    height: auto;
+}
+
+.parte1 {
+    background-color: black;
+    color: #b6e5e9;
+    position: absolute;
+    width: 600px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/*media query*/
+
+@media screen and (max-width:1100px) {
+    .cortina img {
+        width: 380px;
+        padding: 10px;
+        margin-top: 95px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .cortina img {
+        width: 300px;
+        padding: 5px;
+        margin-top: 85px;
+        height: auto;
+    }
+    .cortina h2 {
+        font-size: 35px;
+    }
+    .cortina .opcion1 {
+        height: 550px;
+        border-radius: 0px 50px 50px 0px;
+    }
+    .cortina .opcion2 {
+        height: 550px;
+        border-radius: 50px 0px 0px 50px
+    }
+}
+
+@media screen and (max-width:766px) {
+    .cortina {
+        display: grid;
+        grid-template-columns: repeat(2 1fr);
+        grid-template-areas: "op1 op2";
+        height: 410px;
+    }
+    .cortina img {
+        width: 200px;
+        padding: 5px;
+        margin-top: 85px;
+        height: auto;
+    }
+    .cortina h2 {
+        font-size: 20px;
+    }
+    .cortina .opcion1 {
+        height: 400px;
+        ;
+    }
+    .cortina .opcion2 {
+        height: 400px;
+        ;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cortina {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2 1fr);
+        grid-template-areas: "op1" "op2";
+        height: 800px;
+    }
+    .cortina img {
+        width: 320px;
+        margin: 0px;
+        padding: 5px;
+        margin-top: 15px;
+        height: auto;
+    }
+    .cortina h2 {
+        font-size: 25px;
+    }
+    .cortina .opcion1 {
+        height: 350px;
+        ;
+    }
+    .cortina .opcion2 {
+        height: 350px;
+        ;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .cortina {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: repeat(2 1fr);
+        grid-template-areas: "op1" "op2";
+        height: 700px;
+    }
+    .cortina img {
+        width: 250px;
+        margin: 0px;
+        padding: 5px;
+        margin-top: 15px;
+        height: auto;
+    }
+    .cortina h2 {
+        font-size: 20px;
+    }
+    .cortina .opcion1 {
+        height: 300px;
+        ;
+    }
+    .cortina .opcion2 {
+        height: 300px;
+        ;
+    }
+}

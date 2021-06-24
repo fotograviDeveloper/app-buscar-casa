@@ -1,0 +1,522 @@
+/*------------------ secction formulario-----------*/
+
+img {
+    max-width: 350px;
+}
+
+section .container {
+    margin: 0px 0px;
+}
+
+section .formulario {
+    display: grid;
+    background-color: rgb(22, 177, 204);
+    width: 100%;
+    padding: 15px;
+    height: 630px;
+    margin-top: 30px;
+    border-radius: 50px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "registro descripcion";
+}
+
+
+/*formulario*/
+
+section .registro {
+    margin: 10px;
+    height: 610;
+    grid-area: registro;
+}
+
+section form {
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 10px 0px;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3 ease-in;
+    -o-transition: all 0.3 ease-in;
+}
+
+section form h2 {
+    color: #ffffff;
+    font-size: 50px;
+}
+
+section input {
+    text-align: center;
+    width: 350px;
+    height: 35px;
+    margin: 8px;
+    padding: 5px;
+    border: none;
+    -webkit-transition: all 08 ease;
+    -o-transition: all 08 ease;
+    transition: all 0.8 ease;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+section .perfil button {
+    width: 410px;
+    background-color: rgb(9, 92, 112);
+    margin: 70px 0px 15px 0px;
+    padding: 5px;
+    height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    color: #ffffff;
+    border-radius: 50px;
+    font-size: 30px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3 ease;
+    -o-transition: all 0.3 ease;
+    box-shadow: black 2, 25px 25px;
+}
+
+section .perfil button:hover {
+    background-color: rgba(0, 110, 255, 0.397);
+}
+
+section form a {
+    margin: 15px 35px;
+    padding: 0px;
+    height: 40px;
+    display: inline-block;
+    width: 300px;
+    font-size: 25px;
+    text-emphasis: none;
+    text-decoration: none;
+    background-color: rgb(248, 90, 90);
+    border-radius: 50px;
+    color: #ffffff;
+}
+
+section form a:hover {
+    background-color: rgba(60, 255, 70, 0.5)
+}
+
+section form a:hover {
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+
+/*----------media formuilario  a 1200px----------*/
+
+@media screen and (max-width: 1200px) {
+    section .formulario {
+        width: 935px;
+        display: grid;
+        grid-template-columns: 400px 500px;
+        grid-template-areas: "form info";
+        height: 650px;
+    }
+    section .formulario .registro {
+        width: 350px;
+        display: grid;
+        grid-area: form;
+        height: 500px;
+    }
+    section form {
+        width: 380px;
+        height: 600px;
+    }
+    /*registrate*/
+    section .formulario h2 {
+        font-size: 40px;
+    }
+    /*inputs*/
+    section .formulario input {
+        width: 300px;
+        height: 40px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px;
+    }
+    section .formulario .registro h4 {
+        max-width: 380px;
+        height: 50px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 0px;
+    }
+    /*botones*/
+    section .formulario .registro .perfil {
+        max-width: 380px;
+        height: 50px;
+        font-size: 25px;
+        padding: 5px;
+        margin: 10px;
+        margin-top: 50px;
+    }
+    section .formulario .registro .perfil button {
+        max-width: 340px;
+        height: 50px;
+        font-size: 25px;
+        padding: 5px;
+        margin: 5px;
+    }
+    /*informacion e imagen*/
+    section .formulario .information-description {
+        grid-area: info;
+        height: 500px;
+    }
+    section .formulario .information-description p {
+        max-width: 500px;
+        max-height: 400px;
+        font-size: 19px;
+        height: 250px;
+        grid-area: info;
+    }
+    section .formulario .information-description img {
+        height: 300px;
+        grid-area: img;
+    }
+}
+
+
+/*----------media formuilario  a 1000px----------*/
+
+@media screen and (max-width: 1000px) {
+    section .formulario {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 300px 330px;
+        grid-template-areas: "form info";
+        height: 630px;
+    }
+    section .formulario .registro {
+        width: 280px;
+        grid-area: form;
+        height: 450px;
+        padding: 1px;
+    }
+    section form {
+        width: 280px;
+        height: 500px;
+    }
+    /*registrate*/
+    section .formulario h2 {
+        font-size: 30px;
+    }
+    /*inputs*/
+    section .formulario input {
+        width: 250px;
+        height: 45px;
+        font-size: 18px;
+        padding: 15px;
+        margin: 20px 0px -10px;
+    }
+    /*botones*/
+    section .formulario .registro .perfil {
+        max-width: 300px;
+        height: 40px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px;
+        margin-top: 60px;
+    }
+    section .formulario .registro .perfil button {
+        max-width: 230px;
+        height: 50px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px;
+    }
+    .perfil a {
+        margin: 10px;
+        width: 220px;
+        height: 50px;
+    }
+    /*informacion e imagen*/
+    section .formulario .information-description {
+        grid-area: info;
+        max-width: 330px;
+        height: 600px;
+    }
+    section .formulario .information-description p {
+        width: 330px;
+        max-height: 300px;
+        font-size: 16px;
+        margin: 0px;
+        grid-area: info;
+    }
+    section .formulario .information-description img {
+        max-width: 400px;
+        height: 300px;
+        grid-area: img;
+    }
+}
+
+
+/*----------media formuilario  a 766px----------*/
+
+@media screen and (max-width: 766px) {
+    section .formulario {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 750px 700px;
+        grid-template-columns: none;
+        grid-template-areas: " info""form";
+        height: 1500px;
+    }
+    section .formulario .registro {
+        width: 400px;
+        grid-area: form;
+        height: 600px;
+        padding: 1px;
+    }
+    section form {
+        width: 480px;
+        height: 500px;
+    }
+    /*registrate*/
+    section .formulario h2 {
+        font-size: 30px;
+    }
+    /*inputs*/
+    section .formulario input {
+        width: 350px;
+        height: 40px;
+        font-size: 18px;
+        padding: 5px;
+        margin: 25px 0px -10px;
+    }
+    /*botones*/
+    section .formulario .registro .perfil {
+        max-width: 480px;
+        height: 50px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px;
+    }
+    section .formulario .registro .perfil button {
+        max-width: 480px;
+        height: 50px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px;
+    }
+    /*informacion e imagen*/
+    section .formulario .information-description {
+        grid-area: info;
+        width: 100%;
+        height: 900px;
+    }
+    section .formulario .information-description p {
+        width: 440px;
+        font-size: 23px;
+        height: 300px;
+    }
+    section .formulario .information-description img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+
+/*----------media formuilario  a 499px----------*/
+
+@media screen and (max-width: 499px) {
+    section .formulario {
+        width: 100%;
+        grid-template-rows: 450px 600px;
+        height: 1100px;
+    }
+    section .formulario .registro {
+        width: 430px;
+        height: 55px;
+        padding: 1px;
+    }
+    section form {
+        width: 380px;
+        height: 560px;
+    }
+    /*registrate*/
+    section .formulario h2 {
+        font-size: 30px;
+    }
+    /*inputs*/
+    section .formulario input {
+        width: 100%;
+        height: 40px;
+        font-size: 16px;
+        padding: 5px;
+        margin: 30px 0px -10px;
+    }
+    /*botones*/
+    section .formulario .registro .perfil {
+        width: 380px;
+        height: 50px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px, 0px;
+    }
+    section .formulario .registro .perfil button {
+        max-width: 380px;
+        height: 55px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px -10px;
+    }
+    /*informacion e imagen*/
+    section .formulario .information-description {
+        grid-area: info;
+        width: 100%;
+        height: 500px;
+    }
+    section .formulario .information-description p {
+        width: 420px;
+        font-size: 16px;
+        height: 200px;
+        margin: 0px 0px 20px 0px;
+        grid-area: info;
+    }
+    section .formulario .information-description img {
+        width: 200px;
+        height: 200px;
+        grid-area: img;
+    }
+}
+
+
+/*----------media formuilario  a 466px----------*/
+
+@media screen and (max-width: 466px) {
+    section .formulario {
+        width: 380px;
+        background-color: #ffffff;
+        grid-template-rows: 550px 550px;
+        height: 1200px;
+    }
+    section .formulario .registro {
+        width: 380px;
+        height: 650px;
+        padding: 1px;
+    }
+    section form {
+        background-color: rgb(8, 184, 228);
+        border-radius: 30px;
+        width: 380px;
+        height: 650px;
+    }
+    /*registrate*/
+    section .formulario h2 {
+        font-size: 27px;
+    }
+    /*inputs*/
+    section .formulario input {
+        width: 350px;
+        height: 40px;
+        font-size: 18px;
+        padding: 5px;
+        margin: 25px 0px -10px;
+    }
+    /*botones*/
+    section .formulario .registro .perfil {
+        width: 350px;
+        height: 50px;
+        font-size: 30px;
+        padding: 1px;
+        margin: 10px;
+    }
+    section .formulario .registro .perfil button {
+        max-width: 350px;
+        height: 50px;
+        font-size: 25px;
+        padding: 1px;
+        margin: 10px;
+        margin-top: 60px
+    }
+    /*informacion e imagen*/
+    section .formulario .information-description {
+        max-width: 1fr;
+        height: 600px;
+    }
+    section .formulario .information-description p {
+        max-width: 350px;
+        font-size: 18px;
+        height: 350px;
+        color: #000000;
+        display: grid;
+    }
+    section .formulario .information-description img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/*----------media formuilario  a 400px----------*/
+
+@media screen and (max-width: 400px) {
+    section .formulario {
+        width: 350px;
+        grid-template-rows: 500px 500px;
+        height: 1200px;
+    }
+    section .formulario .registro {
+        width: 300px;
+        grid-area: form;
+        height: 650px;
+        padding: 1px;
+    }
+    section form {
+        background-color: rgb(10, 182, 235);
+        border-radius: 30px;
+        width: 320px;
+        margin-left: -20px;
+        height: 650px;
+    }
+    /*registrate*/
+    section .formulario h2 {
+        font-size: 27px;
+    }
+    /*inputs*/
+    section .formulario input {
+        width: 280px;
+        height: 40px;
+        font-size: 18px;
+        padding: 5px;
+        margin: 25px 0px -10px;
+    }
+    /*botones*/
+    section .formulario .registro .perfil {
+        width: 280px;
+        height: 50px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px;
+    }
+    section .formulario .registro .perfil button {
+        max-width: 280px;
+        height: 50px;
+        font-size: 20px;
+        padding: 5px;
+        margin: 10px;
+        margin-top: 70px;
+    }
+    /*informacion e imagen*/
+    section .formulario .information-description {
+        grid-area: info;
+        max-width: 1fr;
+        height: 500px;
+    }
+    section .formulario .information-description p {
+        max-width: 300px;
+        font-size: 15px;
+        height: 300px;
+        color: #000000;
+        grid-area: info;
+    }
+    section .formulario .information-description img {
+        width: 200px;
+        height: 200px;
+        grid-area: img;
+    }
+}

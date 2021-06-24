@@ -1,0 +1,319 @@
+
+<section class="container wow zoomIn registro" data-wow-Duration="1s" data-wow-delay=".2s" id="reg">
+<div class="container">
+<div class="container " >
+ <a href="/"><button class="  btn btn-primary " type="submit" >inicio</button></a>   
+</div></div>
+
+    <div class="formulario" id="formulario">
+
+        <div class="registro">
+
+            <form class="validacion" id="form" action="/registro" method="POST" name="formulario"
+                onsubmit="return comprobar()">
+                <H2>Registrate</H2>
+                <input class="nombre" type="text" id="nombre" name="nombre" autofocus="autofocus" onkeypress="return soloLetras(event) "
+                    onpaste="return false" placeholder="Nombre">
+                <input class="apellido" type="text" id="apellido" name="apellido" onkeypress="return soloLetras(event) "
+                    onpaste="return false" placeholder="Apellido">
+                <input class="correo" type="text" id="correo" name="correo" placeholder="Correo electronico">
+                <input class="contraseña" type="password" id="contraseña" name="password" placeholder="Contraseña">
+                <input class="confirmacion" type="password" id="confirmacion" name="confirmacion"
+                    placeholder="Confirmar contraseña">
+
+                <input class="celular" type="text" id="numero" name="telefono" onkeypress=" return soloNumeros(event)"
+                    placeholder="Numero de celular">
+
+
+                <div class="perfil">
+                    <button type="submit">Crear perfil</button>
+                    <a href="../login">Ya tengo cuenta</a>
+                </div>
+
+
+            </form>
+        </div>
+        <div class="animated cuidado " id="cuidado">
+            <p>Verifica tu informacion </p> <br>
+            <p class="rojo"> rojo: es porque esta vacio </p><br>
+            <p class="amarillo">amarillo: hay un error verifica que todo este bien escrito</p>
+        </div>
+
+
+
+
+        <div class="information-description">
+
+            <img src="../img/svg/pensando.svg" alt="">
+
+            <p>¿Te gustaria estrenar o vender tu casa? Pero... ¿no sabes como? <br> <br> Ya sea que desees vender o
+                comprar, lo único que tienes que hacer es registrarte y despues elegir una opción, <br>Siker se
+                encargara de encontrar el mejor resultado
+                para ti, en cuestion de minutos. <br> Recuerda, alguien podria estar buscando lo que tu vendes, o,
+                vender lo que tu buscas. </p>
+        </div>
+    </div>
+</section>
+{{> footer}}
+
+<script>
+   var formulario = document.getElementById('formulario');
+var form = document.getElementById("form")
+var nombre = document.getElementById('nombre');
+var apellido = document.getElementById('apellido')
+var email = document.getElementById('correo');
+var contraseña = document.getElementById('contraseña');
+var confirmacion = document.getElementById('confirmacion');
+var telefono = document.getElementById('numero');
+var botones = document.getElementById("opciones");
+var cui = document.getElementById("cuidado");
+
+function soloLetras(e) {
+    key = e.keyCode || e.which;
+    teclado = String.fromCharCode(key).toLowerCase();
+    letras = " abcdefghijklmnñopqrstuvwxyz"
+    especiales = "8-37-38-46-164";
+    tecladoEspecial = false;
+    for (var i in especiales) {
+        if (key == especiales[i]) {
+            tecladoEspecial = true;
+            break;
+        }
+    }
+    if (letras.indexOf(teclado) == -1 && !tecladoEspecial) {
+        return false;
+    }
+}
+
+function soloNumeros(e) {
+    key = e.keyCode || e.which;
+    teclado = String.fromCharCode(key).toLowerCase();
+    numeros = "1234567890"
+    especiales = "8-37-38-46-164";
+    tecladoEspecial = false;
+    for (var i in especiales) {
+        if (key == especiales[i]) {
+            tecladoEspecial = true;
+            break;
+        }
+    }
+    if (numeros.indexOf(teclado) == -1 && !tecladoEspecial) {
+        return false;
+    }
+}
+
+
+funciones de validacion
+function validateName(nombre) {
+    if (nombre.value === 0 || nombre.value == "" || nombre.value.length < 4) {
+
+
+        event.preventDefault()
+
+        nombre.classList.add("error")
+
+        nombre.classList.remove("correcto")
+        nombre.classList.remove("alert")
+        return (false)
+    } else if (/^(![0-9])$/.test(nombre.value)) {
+        event.preventDefault()
+
+        nombre.classList.remove("error")
+        nombre.classList.remove("correcto")
+        nombre.classList.add("alerta")
+
+        return (false)
+    } else {
+
+
+        nombre.classList.remove("alert")
+        nombre.classList.remove("error")
+        nombre.classList.add("correcto")
+        return (true)
+    }
+}
+
+function validateLastName(apellido) {
+    if (apellido.value === 0 || apellido.value == "" || apellido.value.length < 4) {
+
+
+        event.preventDefault()
+
+        apellido.classList.add("error")
+
+        apellido.classList.remove("correcto")
+        apellido.classList.remove("alert")
+        return (false)
+    } else if (/^(![0-9])$/.test(apellido.value)) {
+        event.preventDefault()
+
+        apellido.classList.remove("error")
+        apellido.classList.remove("correcto")
+        apellido.classList.add("alerta")
+
+        return (false)
+    } else {
+
+
+        apellido.classList.remove("alert")
+        apellido.classList.remove("error")
+        apellido.classList.add("correcto")
+        return (true)
+    }
+}
+
+
+function validateEmail(email) {
+
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(correo.value)) {
+
+
+        email.classList.remove("alert")
+        email.classList.remove("error")
+        email.classList.add("correcto")
+        return (true)
+
+    }
+
+    event.preventDefault()
+
+    email.classList.add("error")
+    email.classList.remove("correcto")
+    email.classList.remove("alert")
+    return (false)
+}
+
+
+function validatePassword(contraseña) {
+    if (contraseña.value === 0 || contraseña.value == "") {
+
+        event.preventDefault()
+        contraseña.classList.add("error");
+
+        contraseña.classList.remove("correcto");
+        contraseña.classList.remove("alerta");
+
+        return (false)
+    } else if (contraseña.value.length < 5) {
+        event.preventDefault()
+        contraseña.classList.remove("error")
+        contraseña.classList.remove("correcto")
+        contraseña.classList.add("alerta")
+    } else {
+        contraseña.classList.remove("alerta")
+        contraseña.classList.remove("error")
+        contraseña.classList.add("correcto")
+        return (true)
+    }
+}
+
+function validatePassword2(confirmacion) {
+
+    if (confirmacion.value === 0 || confirmacion.value == "") {
+
+        event.preventDefault()
+
+        confirmacion.classList.add("error")
+        confirmacion.classList.remove("correcto")
+        confirmacion.classList.remove("alerta")
+        return (false)
+    } else if (confirmacion.value !== contraseña.value) {
+        event.preventDefault()
+
+        confirmacion.classList.remove("error");
+        confirmacion.classList.remove("correcto");
+        confirmacion.classList.add("alerta");
+
+    } else {
+
+
+        confirmacion.classList.remove("alerta");
+        confirmacion.classList.remove("error");
+        confirmacion.classList.add("correcto");
+        return (true)
+    }
+}
+
+function passwordOk() {
+    if (contraseña.value !== confirmacion.value) {
+        event.preventDefault()
+
+        contraseña.classList.remove("error")
+        contraseña.classList.remove("correcto")
+        contraseña.classList.add("alerta")
+        confirmacion.classList.remove("error")
+        confirmacion.classList.remove("correcto")
+        confirmacion.classList.add("alerta")
+
+
+        return (false)
+    } else {
+        return (true)
+    }
+}
+
+
+function validatePhone(numero) {
+    if (numero.value === 0 || numero.value == "" || numero.value.length < 8) {
+
+        event.preventDefault()
+        numero.classList.add("error")
+        numero.classList.remove("correcto")
+        numero.classList.remove("alert")
+        return (false)
+    } else if (/^[0-9]$/.test(numero.value)) {
+        event.preventDefault()
+        numero.classList.remove("error")
+        numero.classList.remove("correcto")
+        numero.classList.add("alerta")
+        alert("numero equivocado")
+        return (false)
+    } else {
+
+        numero.classList.remove("alert")
+        numero.classList.remove("error")
+        numero.classList.add("correcto")
+        return (true)
+    }
+}
+
+
+function alerta1() {
+
+    if (nombre.value == "" || contraseña.value == "" || numero < 8 || confirmacion == "") {
+        cui.classList.add("on");
+        cui.classList.add("zoomIn")
+    } else { console.log("dieron positivo para cocaina :v") }
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(correo.value)) {
+
+    } else {
+        setTimeout(() => {
+            cui.classList.add("on");
+            cui.classList.add("zoomIn")
+        }, 1000);
+    }
+    if (contraseña.value !== confirmacion.value) {
+
+        setTimeout(() => {
+            cui.classList.add("on");
+            cui.classList.add("zoomIn")
+        }, 1000);
+    } else {
+        console.log("vale")
+    }
+}
+
+
+formulario.addEventListener("submit", e => {
+    validateName(nombre);
+    validateLastName(apellido);
+    validatePhone(numero);
+    validateEmail(email);
+    validatePassword(contraseña);
+    validatePassword2(confirmacion);
+    passwordOk();
+    alerta1();
+
+
+})
+</script>
