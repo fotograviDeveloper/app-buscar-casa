@@ -1,7 +1,7 @@
 # app-buscar-casa
 esta aplicacion buscaba ayudar a las personas a encontrar casa con sus puntos de infonavit
 
-[url=https://postimg.cc/7bnk5tL8][img]https://i.postimg.cc/wxSTbS8v/Screenshot-2021-06-24-141716.png[/img][/url]
+https://i.postimg.cc/wxSTbS8v/Screenshot-2021-06-24-141716.png[/img][/url]
 
 [url=https://postimg.cc/pyRNMQJ0][img]https://i.postimg.cc/QNWj509r/Screenshot-2021-06-24-141807.png[/img][/url]
 
