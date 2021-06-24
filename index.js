@@ -11,7 +11,7 @@ const session = require("express-session");
 const flash = require('connect-flash');
 const mysql_session = require('express-mysql-session')
 const { database } = require("./routes/keys");
-
+console.log("exito")
 //inisialisation
 const app = express();
 require("./lib/passport");
